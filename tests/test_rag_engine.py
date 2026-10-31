@@ -1,3 +1,4 @@
+import asyncio
 import sys
 from pathlib import Path
 from types import SimpleNamespace
@@ -6,6 +7,26 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import rag_engine as rag  # noqa: E402
+import telegram_bot  # noqa: E402
+
+
+def test_bot_registers_menu_commands_after_startup():
+    calls = []
+
+    class FakeBot:
+        async def set_my_commands(self, commands):
+            calls.extend(commands)
+
+    application = SimpleNamespace(bot=FakeBot())
+    asyncio.run(telegram_bot.post_init(application))
+
+    assert [(command.command, command.description) for command in calls] == [
+        ("start", "Iniciar o reiniciar la conversación"),
+        ("nueva_consulta", "Limpiar contexto para un nuevo caso"),
+        ("ayuda", "Guía de uso y cómo redactar tu caso"),
+        ("articulos", "Ver normativas indexadas"),
+        ("deslinde", "Aviso de exención de responsabilidad legal"),
+    ]
 
 
 @pytest.fixture(scope="module")

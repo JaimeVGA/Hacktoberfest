@@ -14,7 +14,7 @@ import os
 from pathlib import Path
 
 from dotenv import load_dotenv
-from telegram import Update
+from telegram import BotCommand, Update
 from telegram.constants import ChatAction
 from telegram.ext import Application, CommandHandler, ContextTypes, MessageHandler, filters
 
@@ -54,12 +54,63 @@ def split_message(text: str, limit: int = TG_LIMIT) -> list[str]:
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    context.chat_data["history"] = []
     await update.message.reply_text(WELCOME)
 
 
 async def reset(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     context.chat_data["history"] = []
     await update.message.reply_text("Conversación reiniciada.")
+
+
+async def nueva_consulta(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    context.chat_data["history"] = []
+    await update.message.reply_text(
+        "He limpiado el contexto para un nuevo caso. Puedes empezar tu consulta con la descripción del hecho."
+    )
+
+
+async def ayuda(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    msg = (
+        "Guía rápida:\n\n"
+        "1) Describe el hecho y la fecha aproximada.\n"
+        "2) Indica si es un caso de tránsito, movilidad, multa, remolque, estacionamiento o accidente.\n"
+        "3) Menciona la norma o artículo si lo conoces.\n"
+        "4) Si necesitas empezar de cero, usa /nueva_consulta.\n\n"
+        "Ejemplos: ‘¿me pueden multar por doble fila?’ o ‘¿qué pasa si me remolcaron el carro?’"
+    )
+    await update.message.reply_text(msg)
+
+
+async def articulos(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    msg = (
+        "Normativas indexadas en este bot:\n\n"
+        "- Reglamento de Tránsito Metropolitano del Municipio de Oaxaca de Juárez\n"
+        "- Ley de Movilidad para el Estado de Oaxaca\n"
+        "- Ley de Tránsito y Vialidad del Estado de Oaxaca\n"
+        "- Ley de Ingresos del Estado de Oaxaca para el Ejercicio Fiscal 2026\n"
+        "- Documento escaneado con OCR para consulta legal auxiliar"
+    )
+    await update.message.reply_text(msg)
+
+
+async def deslinde(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    await update.message.reply_text(
+        "Aviso: este asistente responde con base en el texto de las normas y no sustituye asesoría legal profesional. "
+        "Si el caso requiere análisis jurídico específico, consulta a un abogado o autoridad competente."
+    )
+
+
+async def post_init(application: Application) -> None:
+    await application.bot.set_my_commands(
+        [
+            BotCommand("start", "Iniciar o reiniciar la conversación"),
+            BotCommand("nueva_consulta", "Limpiar contexto para un nuevo caso"),
+            BotCommand("ayuda", "Guía de uso y cómo redactar tu caso"),
+            BotCommand("articulos", "Ver normativas indexadas"),
+            BotCommand("deslinde", "Aviso de exención de responsabilidad legal"),
+        ]
+    )
 
 
 async def on_text(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -86,9 +137,13 @@ def main() -> None:
     if not token:
         raise SystemExit("Falta TELEGRAM_BOT_TOKEN en el entorno o en .env")
     rag_engine.warmup()  # carga el grafo al arrancar
-    app = Application.builder().token(token).build()
-    app.add_handler(CommandHandler(["start", "ayuda", "help"], start))
+    app = Application.builder().token(token).post_init(post_init).build()
+    app.add_handler(CommandHandler(["start", "iniciar", "reiniciar"], start))
     app.add_handler(CommandHandler("nuevo", reset))
+    app.add_handler(CommandHandler("nueva_consulta", nueva_consulta))
+    app.add_handler(CommandHandler(["ayuda", "help"], ayuda))
+    app.add_handler(CommandHandler("articulos", articulos))
+    app.add_handler(CommandHandler("deslinde", deslinde))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, on_text))
     app.add_error_handler(on_error)
     log.info("Bot iniciado (modelo: %s). Ctrl+C para detener.", rag_engine.MODEL)
