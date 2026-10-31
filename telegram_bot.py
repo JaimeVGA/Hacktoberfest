@@ -9,14 +9,22 @@ Requiere TELEGRAM_BOT_TOKEN y GROQ_API_KEY en el entorno o en .env (junto a este
 from __future__ import annotations
 
 import asyncio
+import io
 import logging
 import os
 from pathlib import Path
 
 from dotenv import load_dotenv
-from telegram import BotCommand, Update
+from telegram import BotCommand, InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.constants import ChatAction
-from telegram.ext import Application, CommandHandler, ContextTypes, MessageHandler, filters
+from telegram.ext import (
+    Application,
+    CallbackQueryHandler,
+    CommandHandler,
+    ContextTypes,
+    MessageHandler,
+    filters,
+)
 
 load_dotenv(Path(__file__).resolve().parent / ".env")
 
@@ -30,11 +38,36 @@ TG_LIMIT = 4096
 HISTORY_KEEP = 12  # mensajes por chat guardados en memoria (rag_engine usa los últimos 6)
 
 WELCOME = (
-    "Hola. Soy un asistente sobre tránsito y movilidad en el municipio de Oaxaca de Juárez. "
-    "Pregúntame, por ejemplo: «¿qué pasa si me remolcan el carro?» o «multa por estacionarme en doble fila».\n\n"
-    "Es orientación basada en el texto de las leyes; no sustituye asesoría legal profesional.\n"
-    "Comandos: /nuevo para reiniciar la conversación, /ayuda."
+    "Hola. Soy un asistente sobre tránsito y movilidad en el municipio de Oaxaca de Juárez.\n\n"
+    "Puedes escribirme tu duda, enviar una nota de voz o elegir una de las preguntas frecuentes de abajo:\n\n"
+    "⚖️ Es orientación basada en el texto de las leyes; no sustituye asesoría legal profesional."
 )
+
+FAQ_BUTTONS = [
+    [InlineKeyboardButton("🚗 ¿Qué pasa si me remolcan?", callback_data="faq:que pasa si me remolcan")],
+    [InlineKeyboardButton("🅿️ Multa por doble fila", callback_data="faq:multa por estacionarse en doble fila")],
+    [InlineKeyboardButton("🪪 Conducir sin licencia", callback_data="faq:sancion por manejar sin licencia")],
+    [InlineKeyboardButton("🍻 Sanción por alcoholímetro", callback_data="faq:sancion por conducir bajo estado de ebriedad")],
+]
+
+
+def faq_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(FAQ_BUTTONS)
+
+
+def build_sources_keyboard(sources: list[tuple[str, str, str]]) -> InlineKeyboardMarkup | None:
+    buttons = []
+    seen = set()
+    for node_id, ley, art in sources:
+        key = (ley, art)
+        if key in seen:
+            continue
+        seen.add(key)
+        label = f"📜 Ver Art. {art} ({'Mpal' if 'Municipio' in ley else 'Estatal'})"
+        # callback_data max 64 bytes
+        # Guardamos el node_id truncado o referencia segura
+        buttons.append([InlineKeyboardButton(label[:60], callback_data=f"art:{node_id}")])
+    return InlineKeyboardMarkup(buttons) if buttons else None
 
 
 def split_message(text: str, limit: int = TG_LIMIT) -> list[str]:
@@ -55,37 +88,37 @@ def split_message(text: str, limit: int = TG_LIMIT) -> list[str]:
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     context.chat_data["history"] = []
-    await update.message.reply_text(WELCOME)
+    await update.message.reply_text(WELCOME, reply_markup=faq_keyboard())
 
 
 async def reset(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     context.chat_data["history"] = []
-    await update.message.reply_text("Conversación reiniciada.")
+    await update.message.reply_text("Conversación reiniciada.", reply_markup=faq_keyboard())
 
 
 async def nueva_consulta(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     context.chat_data["history"] = []
     await update.message.reply_text(
-        "He limpiado el contexto para un nuevo caso. Puedes empezar tu consulta con la descripción del hecho."
+        "He limpiado el contexto para un nuevo caso. Puedes empezar tu consulta o elegir una opción:",
+        reply_markup=faq_keyboard(),
     )
 
 
 async def ayuda(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     msg = (
         "Guía rápida:\n\n"
-        "1) Describe el hecho y la fecha aproximada.\n"
-        "2) Indica si es un caso de tránsito, movilidad, multa, remolque, estacionamiento o accidente.\n"
-        "3) Menciona la norma o artículo si lo conoces.\n"
-        "4) Si necesitas empezar de cero, usa /nueva_consulta.\n\n"
-        "Ejemplos: ‘¿me pueden multar por doble fila?’ o ‘¿qué pasa si me remolcaron el carro?’"
+        "1) Describe el hecho, escribe o manda un audio de voz.\n"
+        "2) Indica si es un caso de tránsito, multa, remolque, estacionamiento o alcoholímetro.\n"
+        "3) Si necesitas empezar de cero, usa /nueva_consulta.\n\n"
+        "O selecciona una consulta rápida abajo:"
     )
-    await update.message.reply_text(msg)
+    await update.message.reply_text(msg, reply_markup=faq_keyboard())
 
 
 async def articulos(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     msg = (
         "Normativas indexadas en este bot:\n\n"
-        "- Reglamento de Tránsito Metropolitano del Municipio de Oaxaca de Juárez\n"
+        "- Reglamento de Tránsito Metropolitano del Municipio de Oaxaca de Juárez (Prioritario)\n"
         "- Ley de Movilidad para el Estado de Oaxaca\n"
         "- Ley de Tránsito y Vialidad del Estado de Oaxaca\n"
         "- Ley de Ingresos del Estado de Oaxaca para el Ejercicio Fiscal 2026\n"
@@ -113,19 +146,80 @@ async def post_init(application: Application) -> None:
     )
 
 
+async def process_question(
+    chat_id: int, question: str, context: ContextTypes.DEFAULT_TYPE, reply_to_message=None
+) -> None:
+    history: list[dict] = context.chat_data.setdefault("history", [])
+    await context.bot.send_chat_action(chat_id, ChatAction.TYPING)
+    answer, sources = await asyncio.to_thread(rag_engine.ask_rag_with_sources, question, list(history))
+    history += [{"role": "user", "content": question}, {"role": "assistant", "content": answer}]
+    del history[:-HISTORY_KEEP]
+
+    chunks = split_message(answer)
+    sources_markup = build_sources_keyboard(sources)
+    for i, chunk in enumerate(chunks):
+        # Asignar los botones al último fragmento del mensaje
+        markup = sources_markup if i == len(chunks) - 1 else None
+        if reply_to_message and i == 0:
+            await reply_to_message.reply_text(chunk, reply_markup=markup)
+        else:
+            await context.bot.send_message(chat_id=chat_id, text=chunk, reply_markup=markup)
+
+
 async def on_text(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     msg = update.message
     question = (msg.text or "").strip()
     if not question:
         return
-    history: list[dict] = context.chat_data.setdefault("history", [])
+    await process_question(msg.chat_id, question, context, reply_to_message=msg)
+
+
+async def on_voice(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    msg = update.message
+    voice_or_audio = msg.voice or msg.audio
+    if not voice_or_audio:
+        return
     await context.bot.send_chat_action(msg.chat_id, ChatAction.TYPING)
-    # ask_rag es síncrona y bloqueante: se ejecuta en un hilo para no frenar el bot
-    answer = await asyncio.to_thread(rag_engine.ask_rag, question, list(history))
-    history += [{"role": "user", "content": question}, {"role": "assistant", "content": answer}]
-    del history[:-HISTORY_KEEP]
-    for chunk in split_message(answer):
-        await msg.reply_text(chunk)  # texto plano: el Markdown del modelo no se interpreta
+    file = await context.bot.get_file(voice_or_audio.file_id)
+    buffer = io.BytesIO()
+    await file.download_to_memory(buffer)
+    audio_bytes = buffer.getvalue()
+
+    try:
+        transcription = await asyncio.to_thread(
+            rag_engine.transcribe_audio, audio_bytes, "voice.ogg"
+        )
+    except Exception as e:
+        log.error("Error al transcribir audio: %s", e)
+        await msg.reply_text("No pude procesar el mensaje de voz. Por favor escribe tu consulta en texto.")
+        return
+
+    if not transcription:
+        await msg.reply_text("No alcancé a distinguir lo que dijiste en el audio. Intenta de nuevo o escribe la consulta.")
+        return
+
+    await msg.reply_text(f"🎙️ *Escuché:* «{transcription}»")
+    await process_question(msg.chat_id, transcription, context, reply_to_message=msg)
+
+
+async def on_callback(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    query = update.callback_query
+    await query.answer()
+    data = query.data or ""
+    if data.startswith("faq:"):
+        question = data[len("faq:"):]
+        await query.message.reply_text(f"👉 *Pregunta seleccionada:* {question}")
+        await process_question(query.message.chat_id, question, context)
+    elif data.startswith("art:"):
+        node_id = data[len("art:"):]
+        node = rag_engine.get_article_by_id(node_id)
+        if not node or not node.texto.strip():
+            await query.message.reply_text("No se encontró el texto completo para este artículo.")
+            return
+        header = f"📖 *{node.ley}*\n*Artículo {node.articulo}* (Capítulo: {node.capitulo or 's/n'}):\n\n"
+        full_text = header + node.texto.strip()
+        for chunk in split_message(full_text):
+            await query.message.reply_text(chunk)
 
 
 async def on_error(update: object, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -144,6 +238,8 @@ def main() -> None:
     app.add_handler(CommandHandler(["ayuda", "help"], ayuda))
     app.add_handler(CommandHandler("articulos", articulos))
     app.add_handler(CommandHandler("deslinde", deslinde))
+    app.add_handler(CallbackQueryHandler(on_callback))
+    app.add_handler(MessageHandler(filters.VOICE | filters.AUDIO, on_voice))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, on_text))
     app.add_error_handler(on_error)
     log.info("Bot iniciado (modelo: %s). Ctrl+C para detener.", rag_engine.MODEL)

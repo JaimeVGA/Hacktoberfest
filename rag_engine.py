@@ -437,6 +437,25 @@ def _call_groq(messages: list[dict], max_tokens: int = 900, deadline: float | No
     raise RuntimeError(f"Groq no disponible: {type(last).__name__ if last else 'desconocido'}")
 
 
+def transcribe_audio(file_bytes: bytes, filename: str = "audio.ogg") -> str:
+    """Transcribe un archivo de audio (ej. nota de voz de Telegram) usando Groq Whisper."""
+    import groq
+
+    key = os.getenv("GROQ_API_KEY")
+    if not key:
+        raise RuntimeError("GROQ_API_KEY no configurada")
+    client = groq.Groq(api_key=key, timeout=20.0, max_retries=1)
+    transcription = client.audio.transcriptions.create(
+        file=(filename, file_bytes),
+        model="whisper-large-v3-turbo",
+        response_format="text",
+        language="es",
+    )
+    if isinstance(transcription, str):
+        return transcription.strip()
+    return getattr(transcription, "text", str(transcription)).strip()
+
+
 def rewrite_query(question: str) -> str | None:
     """Nivel 3: traduce jerga a términos legales. Devuelve None si falla."""
     try:
@@ -502,6 +521,8 @@ class GraphRAGEngine:
 
 _engine: GraphRAGEngine | None = None
 _lock = threading.Lock()
+_CACHE_MAX_SIZE = 200
+_cache: dict[str, tuple[str, list[tuple[str, str, str]]]] = {}  # query_norm -> (respuesta, [(id, ley, art)])
 
 
 def _get_engine() -> GraphRAGEngine:
@@ -514,6 +535,11 @@ def _get_engine() -> GraphRAGEngine:
     return _engine
 
 
+def get_article_by_id(node_id: str) -> Node | None:
+    """Obtiene un nodo del grafo por su ID."""
+    return _get_engine().graph.nodes.get(node_id)
+
+
 def warmup() -> bool:
     """Carga el grafo por adelantado (opcional). Devuelve False si falla."""
     try:
@@ -524,12 +550,49 @@ def warmup() -> bool:
         return False
 
 
-def ask_rag(question: str, history: list | None = None) -> str:
-    """Responde una pregunta legal. Siempre devuelve ``str`` y nunca lanza excepciones."""
+def ask_rag_with_sources(question: str, history: list | None = None) -> tuple[str, list[tuple[str, str, str]]]:
+    """Responde una pregunta legal y devuelve (respuesta, [(node_id, ley, articulo)]).
+    
+    Aplica caché en memoria para consultas iniciales idénticas sin historial.
+    """
     try:
         if not isinstance(question, str) or not question.strip():
-            return MSG_EMPTY
-        return _get_engine().answer(question.strip(), history)
+            return MSG_EMPTY, []
+        q_clean = question.strip()
+        hist = clean_history(history)
+        q_norm = normalize(q_clean)
+        if not hist and q_norm in _cache:
+            return _cache[q_norm]
+
+        engine = _get_engine()
+        r = engine.retrieve(q_clean, hist, DEFAULT_K, DEFAULT_HOPS)
+        if not r.passages or not any(p.node.texto.strip() for p in r.passages):
+            return MSG_NOT_FOUND, []
+
+        sources: list[tuple[str, str, str]] = []
+        for p in r.passages:
+            if p.origin == "semilla" and p.node.tipo == "articulo":
+                sources.append((p.node.id, p.node.ley, p.node.articulo))
+
+        messages = build_messages(q_clean, r.passages, hist, r.low_confidence)
+        try:
+            answer = f"{_call_groq(messages)}\n\n{DISCLAIMER}"
+        except RuntimeError as e:
+            log.warning("Modo degradado: %s", e)
+            answer = f"{degraded_answer(r.passages)}\n\n{DISCLAIMER}"
+
+        if not hist:
+            if len(_cache) >= _CACHE_MAX_SIZE:
+                _cache.pop(next(iter(_cache)))
+            _cache[q_norm] = (answer, sources)
+
+        return answer, sources
     except Exception:
-        log.exception("ask_rag falló")
-        return MSG_GENERIC_ERROR
+        log.exception("ask_rag_with_sources falló")
+        return MSG_GENERIC_ERROR, []
+
+
+def ask_rag(question: str, history: list | None = None) -> str:
+    """Responde una pregunta legal. Siempre devuelve ``str`` y nunca lanza excepciones."""
+    answer, _ = ask_rag_with_sources(question, history)
+    return answer

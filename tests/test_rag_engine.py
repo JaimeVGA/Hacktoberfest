@@ -203,3 +203,48 @@ def test_disclaimer_in_degraded_mode(monkeypatch):
     monkeypatch.setattr(rag, "_engine", None)
     monkeypatch.delenv("GROQ_API_KEY", raising=False)
     assert rag.DISCLAIMER in rag.ask_rag("me remolcaron la troca")
+
+
+def test_lru_cache_and_sources(monkeypatch):
+    monkeypatch.setattr(rag, "_engine", None)
+    calls = {"n": 0}
+
+    def fake_call_groq(*a, **k):
+        calls["n"] += 1
+        return "Respuesta simulada"
+
+    monkeypatch.setattr(rag, "_call_groq", fake_call_groq)
+    rag._cache.clear()
+
+    ans1, sources1 = rag.ask_rag_with_sources("¿qué pasa si me remolcan?")
+    assert calls["n"] == 1
+    assert "Respuesta simulada" in ans1
+    assert len(sources1) > 0
+
+    # Segunda llamada idéntica debe salir de caché
+    ans2, sources2 = rag.ask_rag_with_sources("¿qué pasa si me remolcan?")
+    assert calls["n"] == 1  # No subió el contador de llamadas
+    assert ans1 == ans2
+    assert sources1 == sources2
+
+
+def test_get_article_by_id(graph):
+    first_art = graph.articles[0]
+    node = rag.get_article_by_id(first_art.id)
+    assert node is not None
+    assert node.id == first_art.id
+    assert node.texto != ""
+
+
+def test_transcribe_audio_mock(monkeypatch):
+    class FakeTranscriptions:
+        def create(self, **kw):
+            return "me multaron por exceso de velocidad"
+
+    class FakeClient:
+        audio = SimpleNamespace(transcriptions=FakeTranscriptions())
+
+    monkeypatch.setattr("groq.Groq", lambda **kw: FakeClient())
+    monkeypatch.setenv("GROQ_API_KEY", "fake_key")
+    result = rag.transcribe_audio(b"dummy_bytes", "audio.ogg")
+    assert result == "me multaron por exceso de velocidad"

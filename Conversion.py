@@ -208,25 +208,70 @@ def extract_legal_units(pdf_path: Path = PDF_PATH) -> list[Document]:
     return units
 
 
+def _ley_name(fuente: str) -> str:
+    if fuente.startswith("Transito_y_Vialidad_Oaxaca"):
+        return "Reglamento de Tránsito Metropolitano para el Municipio de Oaxaca de Juárez"
+    if fuente.startswith("Ley_de_Movilidad"):
+        return "Ley de Movilidad para el Estado de Oaxaca"
+    if fuente.startswith("LEY_DE_INGRESOS"):
+        return "Ley de Ingresos del Estado de Oaxaca para el Ejercicio Fiscal 2026"
+    if fuente.startswith("Ley_de_Transito"):
+        return "Ley de Tránsito y Vialidad del Estado de Oaxaca"
+    return "Iniciativa de reforma (9.pdf)"
+
+
+def _ley_slug(fuente: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", _ley_name(fuente).lower().replace("á", "a")).strip("-")
+
+
 def build_graph(units: Iterable[Document], output: Path = GRAPH_PATH) -> None:
-    """Guarda un grafo pequeño y portable para expandir el contexto recuperado."""
+    """Guarda un grafo con texto completo, alcance e identificadores únicos sin colisiones."""
     nodes: list[dict] = []
     edges: list[dict] = []
-    previous_article: str | None = None
+    seen_ids: dict[str, int] = {}
     chapters: set[str] = set()
+    previous: dict[str, str] = {}
     for unit in units:
         meta = unit.metadata
-        article_id = meta["unidad_id"]
-        chapter_id = meta["capitulo_id"]
+        fuente = meta["fuente"]
+        slug = _ley_slug(fuente)
+        scope = meta.get("alcance") or _scope(Path(fuente))
+        law_name = _ley_name(fuente)
+        chapter_id = f"{slug}:{meta['capitulo_id']}"
         if chapter_id not in chapters:
             chapters.add(chapter_id)
-            nodes.append({"id": chapter_id, "tipo": "capitulo", "nombre": meta["capitulo"]})
-        nodes.append({"id": article_id, "tipo": "articulo", **meta})
-        edges.append({"source": chapter_id, "target": article_id, "relacion": "contiene"})
-        if previous_article:
-            edges.append({"source": previous_article, "target": article_id, "relacion": "siguiente"})
-        previous_article = article_id
-    output.write_text(json.dumps({"nodes": nodes, "edges": edges}, ensure_ascii=False, indent=2), encoding="utf-8")
+            nodes.append(
+                {
+                    "id": chapter_id,
+                    "tipo": "capitulo",
+                    "nombre": meta.get("capitulo", ""),
+                    "ley": law_name,
+                    "fuente": fuente,
+                    "alcance": scope,
+                }
+            )
+        base_id = f"{slug}:{meta['capitulo_id']}:articulo-{str(meta['articulo']).replace(' ', '-')}"
+        seen_ids[base_id] = seen_ids.get(base_id, 0) + 1
+        node_id = base_id if seen_ids[base_id] == 1 else f"{base_id}-{seen_ids[base_id]}"
+        nodes.append(
+            {
+                "id": node_id,
+                "tipo": "articulo",
+                "articulo": str(meta["articulo"]),
+                "capitulo_id": chapter_id,
+                "capitulo": meta.get("capitulo", ""),
+                "pagina": meta.get("pagina", 0),
+                "fuente": fuente,
+                "ley": law_name,
+                "alcance": scope,
+                "texto": unit.page_content,
+            }
+        )
+        edges.append({"source": chapter_id, "target": node_id, "relacion": "contiene"})
+        if fuente in previous:
+            edges.append({"source": previous[fuente], "target": node_id, "relacion": "siguiente"})
+        previous[fuente] = node_id
+    output.write_text(json.dumps({"nodes": nodes, "edges": edges}, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
 def ingest() -> None:
