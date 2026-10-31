@@ -1,0 +1,8 @@
+# Motor GraphRAG (rag_engine.py / test_cli.py)
+rapidfuzz>=3.14
+Unidecode>=1.4
+groq>=0.11
+python-dotenv>=1.0
+
+# Pruebas (tests/)
+pytest>=8.0
