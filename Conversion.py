@@ -77,6 +77,12 @@ def _chapter_at(text: str, position: int) -> tuple[str, str]:
     return f"capitulo-{match.group(1).lower()}", name
 
 
+def _scope(pdf_path: Path) -> str:
+    if pdf_path.name == "Transito_y_Vialidad_Oaxaca.pdf":
+        return "municipal-oaxaca-de-juarez"
+    return "estatal-oaxaca"
+
+
 def _ocr_pdf(pdf_path: Path) -> list[Document]:
     """Convierte temporalmente cada página escaneada a texto con Tesseract."""
     pages: list[Document] = []
@@ -123,7 +129,21 @@ def _ocr_pdf(pdf_path: Path) -> list[Document]:
 
 
 def _load_pages(pdf_path: Path) -> list[Document]:
-    pages = PyPDFLoader(str(pdf_path)).load()
+    try:
+        pages = PyPDFLoader(str(pdf_path)).load()
+    except Exception:
+        result = subprocess.run(
+            ["pdftotext", "-layout", str(pdf_path), "-"],
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+        pages = [
+            Document(page_content=text, metadata={"page": index + 1})
+            for index, text in enumerate(result.stdout.split("\f"))
+            if text.strip()
+        ]
+        print(f"Extractor pdftotext: {pdf_path.name}")
     if sum(len(page.page_content.strip()) for page in pages) < 1000:
         cache = pdf_path.with_suffix(f".ocr.{OCR_VERSION}.txt")
         if cache.exists():
@@ -147,6 +167,13 @@ def extract_legal_units(pdf_path: Path = PDF_PATH) -> list[Document]:
         offset += len(page_text) + 1
         page_ends.append(offset)
     articles = list(ARTICLE_RE.finditer(full_text))
+    if pdf_path.name == "Transito_y_Vialidad_Oaxaca.pdf":
+        first_article = next(
+            (index for index, match in enumerate(articles) if match.group(1) == "1"),
+            None,
+        )
+        if first_article is not None:
+            articles = articles[first_article:]
     if not articles:
         raise ValueError("No se encontraron artículos en el PDF.")
 
@@ -170,6 +197,7 @@ def extract_legal_units(pdf_path: Path = PDF_PATH) -> list[Document]:
                     "capitulo": chapter_name,
                     "pagina": page or 0,
                     "fuente": pdf_path.name,
+                    "alcance": _scope(pdf_path),
                     "unidad_id": (
                         f"{pdf_path.stem[:24]}-{chapter_id}-"
                         f"articulo-{article_label.replace(' ', '-')}"

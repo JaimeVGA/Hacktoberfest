@@ -33,6 +33,11 @@ def test_explicit_article(graph):
     assert "Movilidad" in r.passages[0].node.ley
 
 
+def test_city_query_prioritizes_oaxaca_de_juarez(graph):
+    r = graph.search("reglamento de tránsito de Oaxaca de Juárez sobre estacionamiento")
+    assert r.passages[0].node.alcance == "municipal-oaxaca-de-juarez"
+
+
 @pytest.mark.parametrize("q", ["me remolcaron la troca", "kiero saber si me pueden multar x velosidad",
                                "xyzzy qwerty"])
 def test_never_empty(graph, q):
