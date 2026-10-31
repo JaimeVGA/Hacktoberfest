@@ -13,6 +13,7 @@ llámala con ``await asyncio.to_thread(ask_rag, pregunta, history)``.
 
 from __future__ import annotations
 
+import hashlib
 import json
 import logging
 import math
@@ -219,6 +220,9 @@ class LegalGraph:
                 self.next[e["source"]] = e["target"]
                 self.prev[e["target"]] = e["source"]
         self.articles = [n for n in self.nodes.values() if n.tipo == "articulo"]
+        self.short_nodes: dict[str, Node] = {
+            short_node_id(nid): node for nid, node in self.nodes.items()
+        }
         self._build_index()
 
     def _build_index(self) -> None:
@@ -535,9 +539,15 @@ def _get_engine() -> GraphRAGEngine:
     return _engine
 
 
+def short_node_id(node_id: str) -> str:
+    """Devuelve un identificador compacto (16 caracteres ASCII) apto para callback_data (<=64 bytes)."""
+    return hashlib.sha1(node_id.encode("utf-8")).hexdigest()[:16]
+
+
 def get_article_by_id(node_id: str) -> Node | None:
-    """Obtiene un nodo del grafo por su ID."""
-    return _get_engine().graph.nodes.get(node_id)
+    """Obtiene un nodo del grafo por su ID completo o su ID compacto."""
+    graph = _get_engine().graph
+    return graph.nodes.get(node_id) or graph.short_nodes.get(node_id)
 
 
 def warmup() -> bool:

@@ -64,9 +64,9 @@ def build_sources_keyboard(sources: list[tuple[str, str, str]]) -> InlineKeyboar
             continue
         seen.add(key)
         label = f"📜 Ver Art. {art} ({'Mpal' if 'Municipio' in ley else 'Estatal'})"
-        # callback_data max 64 bytes
-        # Guardamos el node_id truncado o referencia segura
-        buttons.append([InlineKeyboardButton(label[:60], callback_data=f"art:{node_id}")])
+        # Telegram limita callback_data a 64 bytes; usamos un ID corto determinístico (20 bytes total)
+        short_id = rag_engine.short_node_id(node_id)
+        buttons.append([InlineKeyboardButton(label[:60], callback_data=f"art:{short_id}")])
     return InlineKeyboardMarkup(buttons) if buttons else None
 
 
@@ -185,9 +185,10 @@ async def on_voice(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await file.download_to_memory(buffer)
     audio_bytes = buffer.getvalue()
 
+    filename = getattr(voice_or_audio, "file_name", None) or "voice.ogg"
     try:
         transcription = await asyncio.to_thread(
-            rag_engine.transcribe_audio, audio_bytes, "voice.ogg"
+            rag_engine.transcribe_audio, audio_bytes, filename
         )
     except Exception as e:
         log.error("Error al transcribir audio: %s", e)
@@ -223,7 +224,7 @@ async def on_callback(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
 
 
 async def on_error(update: object, context: ContextTypes.DEFAULT_TYPE) -> None:
-    log.error("Error en el bot: %s", type(context.error).__name__)
+    log.error("Error en el bot (%s): %s", type(context.error).__name__, context.error)
 
 
 def main() -> None:

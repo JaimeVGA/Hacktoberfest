@@ -234,6 +234,22 @@ def test_get_article_by_id(graph):
     assert node is not None
     assert node.id == first_art.id
     assert node.texto != ""
+    # También resuelve por short_node_id usado en callback_data de Telegram
+    short_id = rag.short_node_id(first_art.id)
+    assert rag.get_article_by_id(short_id) == node
+
+
+def test_sources_keyboard_callback_data_within_telegram_64_byte_limit(graph):
+    sources = [(n.id, n.ley, n.articulo) for n in graph.articles]
+    markup = telegram_bot.build_sources_keyboard(sources)
+    assert markup is not None
+    for row in markup.inline_keyboard:
+        for btn in row:
+            raw_bytes = btn.callback_data.encode("utf-8")
+            assert 1 <= len(raw_bytes) <= 64
+            assert btn.callback_data.startswith("art:")
+            short_id = btn.callback_data[len("art:"):]
+            assert rag.get_article_by_id(short_id) is not None
 
 
 def test_transcribe_audio_mock(monkeypatch):
