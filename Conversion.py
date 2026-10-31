@@ -87,7 +87,10 @@ def _ocr_pdf(pdf_path: Path) -> list[Document]:
         del rendered
         for image_path in sorted(Path(temp_dir).glob("page-*.png")):
             result = subprocess.run(
-                ["tesseract", str(image_path), "stdout", "-l", "eng", "--psm", "6"],
+                [
+                    "tesseract", str(image_path), "stdout",
+                    "-l", os.getenv("OCR_LANG", "eng"), "--psm", "6",
+                ],
                 check=True,
                 capture_output=True,
                 text=True,
@@ -101,6 +104,12 @@ def _ocr_pdf(pdf_path: Path) -> list[Document]:
 def _load_pages(pdf_path: Path) -> list[Document]:
     pages = PyPDFLoader(str(pdf_path)).load()
     if sum(len(page.page_content.strip()) for page in pages) < 1000:
+        cache = pdf_path.with_suffix(".ocr.txt")
+        if cache.exists():
+            return [
+                Document(page_content=text, metadata={"page": index + 1})
+                for index, text in enumerate(cache.read_text(encoding="utf-8").split("\n\n"))
+            ]
         print(f"OCR: {pdf_path.name} ({len(pages)} páginas)")
         pages = _ocr_pdf(pdf_path)
     return pages
