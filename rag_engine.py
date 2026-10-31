@@ -54,8 +54,12 @@ MAX_CONTEXT_CHARS = 12000
 HISTORY_MESSAGES = 6
 HISTORY_CHARS = 500
 LOW_CONFIDENCE = 0.30
+MUNICIPAL = "municipal-oaxaca-de-juarez"
+MUNICIPAL_BOOST = 1.8
+STATE_PENALTY = 0.85
+STATE_HINTS = ("ley de movilidad", "ley de transito", "ley de ingresos", "estatal", "del estado")
 
-MSG_EMPTY = "Escribe tu pregunta sobre tránsito, vialidad o movilidad en Oaxaca."
+MSG_EMPTY = "Escribe tu pregunta sobre tránsito o movilidad en Oaxaca de Juárez."
 MSG_NOT_FOUND = (
     "No encontré un artículo relacionado con tu consulta. Intenta reformularla "
     "o indica la ley o el número de artículo."
@@ -288,7 +292,8 @@ class LegalGraph:
             if law:
                 filtered = [n for n in hits if law in normalize(n.ley)]
                 hits = filtered or hits
-            hits.sort(key=lambda n: "iniciativa" in n.ley.lower())
+            # sin ley explícita: primero el reglamento municipal, al final las iniciativas
+            hits.sort(key=lambda n: ("iniciativa" in n.ley.lower(), n.alcance != MUNICIPAL))
             if hits:
                 return Retrieval([Passage(n, 100.0, "semilla") for n in hits[:k]], 0, False, query)
 
@@ -296,14 +301,12 @@ class LegalGraph:
         terms = expand_jerga(query)
         ranking, coverage = self._lexical(terms)
         nq = normalize(query)
-        city_hint = any(
-            phrase in nq
-            for phrase in ("oaxaca de juarez", "ciudad de oaxaca", "oaxaca capital", "municipio")
-        )
-        if city_hint:
+        # El proyecto se enfoca en Oaxaca de Juárez: el reglamento municipal tiene prioridad
+        # por defecto, salvo que la pregunta nombre explícitamente una ley estatal.
+        if not any(p in nq for p in STATE_HINTS):
             ranking = [
-                (idx, score * (1.8 if self.articles[idx].alcance == "municipal-oaxaca-de-juarez" else 0.85)
-                 if self.articles[idx].alcance else score)
+                (idx, score * (MUNICIPAL_BOOST if self.articles[idx].alcance == MUNICIPAL
+                               else STATE_PENALTY if self.articles[idx].alcance else 1.0))
                 for idx, score in ranking
             ]
             ranking.sort(key=lambda item: item[1], reverse=True)
@@ -330,12 +333,16 @@ class LegalGraph:
 
 
 SYSTEM_PROMPT = (
-    "Eres un asistente jurídico sobre tránsito, vialidad y movilidad en el Estado de Oaxaca. "
-    "Responde en español, de forma clara y breve, usando ÚNICAMENTE el contexto legal "
-    "proporcionado. Cita siempre la ley y el número de artículo (p. ej. «Ley de Movilidad, "
-    "Art. 12»). El texto puede tener errores de OCR: interprétalo con cuidado. Si el contexto no "
-    "responde la pregunta, dilo explícitamente y no inventes artículos, montos ni plazos. "
-    "No sustituyes asesoría legal profesional."
+    "Eres un asistente sobre tránsito y movilidad en el municipio de Oaxaca de Juárez. "
+    "Usa ÚNICAMENTE el contexto legal dado. Prioriza el Reglamento de Tránsito Metropolitano "
+    "de Oaxaca de Juárez; usa las leyes estatales solo si complementan o el reglamento no lo cubre, "
+    "y dilo en una frase. Las «iniciativas» son propuestas, no normas vigentes.\n"
+    "FORMATO: responde en español, directo y conciso, máximo 4 líneas (unas 60 palabras). "
+    "Empieza con la respuesta concreta (qué pasa, qué se debe hacer, cuánto cuesta) sin saludo "
+    "ni introducción. Cierra con la fuente entre paréntesis, p. ej. (Reglamento municipal, "
+    "Art. 12). Sin listas largas, sin repetir la pregunta y sin avisos legales.\n"
+    "El texto puede tener errores de OCR: interprétalo con cuidado. Si el contexto no responde, "
+    "dilo en una frase y no inventes artículos, montos ni plazos."
 )
 
 
@@ -395,10 +402,14 @@ def _call_groq(messages: list[dict], max_tokens: int = 900, deadline: float | No
     last: Exception | None = None
     for attempt in range(GROQ_MAX_ATTEMPTS):
         try:
+            extra = {"reasoning_effort": "low"} if MODEL.startswith("openai/gpt-oss") else {}
             resp = client.chat.completions.create(
-                model=MODEL, messages=messages, temperature=0.0, max_tokens=max_tokens
+                model=MODEL, messages=messages, temperature=0.0, max_tokens=max_tokens, **extra
             )
-            return (resp.choices[0].message.content or "").strip()
+            text = (resp.choices[0].message.content or "").strip()
+            if not text:
+                raise RuntimeError("Groq devolvió una respuesta vacía")
+            return text
         except (groq.AuthenticationError, groq.PermissionDeniedError) as e:
             raise RuntimeError(f"credenciales de Groq inválidas: {e}") from e
         except groq.BadRequestError as e:

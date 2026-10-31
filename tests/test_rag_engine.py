@@ -147,3 +147,23 @@ def test_graph_loaded_once(monkeypatch):
     for _ in range(3):
         rag._get_engine()
     assert n["c"] == 1
+
+
+def test_municipal_is_default_without_city_mention(graph):
+    r = graph.search("multa por estacionarse en doble fila")
+    assert r.passages[0].node.alcance == rag.MUNICIPAL
+
+
+def test_explicit_state_law_not_forced_municipal(graph):
+    r = graph.search("artículo 2 de la Ley de Movilidad")
+    assert "Movilidad" in r.passages[0].node.ley
+
+
+def test_article_without_law_prefers_municipal(graph):
+    r = graph.search("artículo 5")
+    assert r.passages[0].node.alcance == rag.MUNICIPAL
+
+
+def test_prompt_is_concise_and_municipal():
+    p = rag.SYSTEM_PROMPT
+    assert "Oaxaca de Juárez" in p and "máximo 4 líneas" in p

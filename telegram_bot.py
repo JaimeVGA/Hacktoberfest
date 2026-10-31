@@ -30,8 +30,8 @@ TG_LIMIT = 4096
 HISTORY_KEEP = 12  # mensajes por chat guardados en memoria (rag_engine usa los últimos 6)
 
 WELCOME = (
-    "Hola. Soy un asistente sobre tránsito, vialidad y movilidad en Oaxaca. "
-    "Pregúntame, por ejemplo: «¿qué pasa si me remolcan el carro?» o «artículo 2 de la Ley de Movilidad».\n\n"
+    "Hola. Soy un asistente sobre tránsito y movilidad en el municipio de Oaxaca de Juárez. "
+    "Pregúntame, por ejemplo: «¿qué pasa si me remolcan el carro?» o «multa por estacionarme en doble fila».\n\n"
     "Es orientación basada en el texto de las leyes; no sustituye asesoría legal profesional.\n"
     "Comandos: /nuevo para reiniciar la conversación, /ayuda."
 )
