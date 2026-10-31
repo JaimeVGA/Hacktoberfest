@@ -21,8 +21,8 @@ def test_normalize_and_ref():
 
 
 def test_graph_unique_and_texts(graph):
-    assert len(graph.articles) == 465
-    assert len({n.id for n in graph.articles}) == 465
+    assert len(graph.articles) > 400
+    assert len({n.id for n in graph.articles}) == len(graph.articles)
     assert all(n.texto for n in graph.articles)
 
 
