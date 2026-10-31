@@ -1,0 +1,2351 @@
+{
+  "nodes": [
+    {
+      "id": "capitulo-i",
+      "tipo": "capitulo",
+      "nombre": "DE LAS DISPOSICIONES GENERALES"
+    },
+    {
+      "id": "capitulo-i-articulo-1",
+      "tipo": "articulo",
+      "articulo": "1",
+      "capitulo_id": "capitulo-i",
+      "capitulo": "DE LAS DISPOSICIONES GENERALES",
+      "pagina": 1,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-i-articulo-1"
+    },
+    {
+      "id": "capitulo-i-articulo-2",
+      "tipo": "articulo",
+      "articulo": "2",
+      "capitulo_id": "capitulo-i",
+      "capitulo": "DE LAS DISPOSICIONES GENERALES",
+      "pagina": 1,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-i-articulo-2"
+    },
+    {
+      "id": "capitulo-i-articulo-3",
+      "tipo": "articulo",
+      "articulo": "3",
+      "capitulo_id": "capitulo-i",
+      "capitulo": "DE LAS DISPOSICIONES GENERALES",
+      "pagina": 2,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-i-articulo-3"
+    },
+    {
+      "id": "capitulo-i-articulo-4",
+      "tipo": "articulo",
+      "articulo": "4",
+      "capitulo_id": "capitulo-i",
+      "capitulo": "DE LAS DISPOSICIONES GENERALES",
+      "pagina": 5,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-i-articulo-4"
+    },
+    {
+      "id": "capitulo-i-articulo-5",
+      "tipo": "articulo",
+      "articulo": "5",
+      "capitulo_id": "capitulo-i",
+      "capitulo": "DE LAS DISPOSICIONES GENERALES",
+      "pagina": 5,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-i-articulo-5"
+    },
+    {
+      "id": "capitulo-ii",
+      "tipo": "capitulo",
+      "nombre": "DE LAS AUTORIDADES"
+    },
+    {
+      "id": "capitulo-ii-articulo-6",
+      "tipo": "articulo",
+      "articulo": "6",
+      "capitulo_id": "capitulo-ii",
+      "capitulo": "DE LAS AUTORIDADES",
+      "pagina": 5,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-ii-articulo-6"
+    },
+    {
+      "id": "capitulo-ii-articulo-7",
+      "tipo": "articulo",
+      "articulo": "7",
+      "capitulo_id": "capitulo-ii",
+      "capitulo": "DE LAS AUTORIDADES",
+      "pagina": 6,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-ii-articulo-7"
+    },
+    {
+      "id": "capitulo-ii-articulo-8",
+      "tipo": "articulo",
+      "articulo": "8",
+      "capitulo_id": "capitulo-ii",
+      "capitulo": "DE LAS AUTORIDADES",
+      "pagina": 6,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-ii-articulo-8"
+    },
+    {
+      "id": "capitulo-iii",
+      "tipo": "capitulo",
+      "nombre": "DE LAS ATRIBUCIONES"
+    },
+    {
+      "id": "capitulo-iii-articulo-9",
+      "tipo": "articulo",
+      "articulo": "9",
+      "capitulo_id": "capitulo-iii",
+      "capitulo": "DE LAS ATRIBUCIONES",
+      "pagina": 6,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iii-articulo-9"
+    },
+    {
+      "id": "capitulo-iii-articulo-10",
+      "tipo": "articulo",
+      "articulo": "10",
+      "capitulo_id": "capitulo-iii",
+      "capitulo": "DE LAS ATRIBUCIONES",
+      "pagina": 6,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iii-articulo-10"
+    },
+    {
+      "id": "capitulo-iii-articulo-11",
+      "tipo": "articulo",
+      "articulo": "11",
+      "capitulo_id": "capitulo-iii",
+      "capitulo": "DE LAS ATRIBUCIONES",
+      "pagina": 6,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iii-articulo-11"
+    },
+    {
+      "id": "capitulo-iii-articulo-12",
+      "tipo": "articulo",
+      "articulo": "12",
+      "capitulo_id": "capitulo-iii",
+      "capitulo": "DE LAS ATRIBUCIONES",
+      "pagina": 7,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iii-articulo-12"
+    },
+    {
+      "id": "capitulo-iii-articulo-13",
+      "tipo": "articulo",
+      "articulo": "13",
+      "capitulo_id": "capitulo-iii",
+      "capitulo": "DE LAS ATRIBUCIONES",
+      "pagina": 7,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iii-articulo-13"
+    },
+    {
+      "id": "capitulo-iii-articulo-14",
+      "tipo": "articulo",
+      "articulo": "14",
+      "capitulo_id": "capitulo-iii",
+      "capitulo": "DE LAS ATRIBUCIONES",
+      "pagina": 7,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iii-articulo-14"
+    },
+    {
+      "id": "capitulo-iii-articulo-15",
+      "tipo": "articulo",
+      "articulo": "15",
+      "capitulo_id": "capitulo-iii",
+      "capitulo": "DE LAS ATRIBUCIONES",
+      "pagina": 8,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iii-articulo-15"
+    },
+    {
+      "id": "capitulo-iii-articulo-16",
+      "tipo": "articulo",
+      "articulo": "16",
+      "capitulo_id": "capitulo-iii",
+      "capitulo": "DE LAS ATRIBUCIONES",
+      "pagina": 10,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iii-articulo-16"
+    },
+    {
+      "id": "capitulo-iii-articulo-17",
+      "tipo": "articulo",
+      "articulo": "17",
+      "capitulo_id": "capitulo-iii",
+      "capitulo": "DE LAS ATRIBUCIONES",
+      "pagina": 11,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iii-articulo-17"
+    },
+    {
+      "id": "capitulo-iii-articulo-18",
+      "tipo": "articulo",
+      "articulo": "18",
+      "capitulo_id": "capitulo-iii",
+      "capitulo": "DE LAS ATRIBUCIONES",
+      "pagina": 11,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iii-articulo-18"
+    },
+    {
+      "id": "capitulo-iii-articulo-19",
+      "tipo": "articulo",
+      "articulo": "19",
+      "capitulo_id": "capitulo-iii",
+      "capitulo": "DE LAS ATRIBUCIONES",
+      "pagina": 12,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iii-articulo-19"
+    },
+    {
+      "id": "capitulo-iii-articulo-20",
+      "tipo": "articulo",
+      "articulo": "20",
+      "capitulo_id": "capitulo-iii",
+      "capitulo": "DE LAS ATRIBUCIONES",
+      "pagina": 13,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iii-articulo-20"
+    },
+    {
+      "id": "capitulo-iii-articulo-21",
+      "tipo": "articulo",
+      "articulo": "21",
+      "capitulo_id": "capitulo-iii",
+      "capitulo": "DE LAS ATRIBUCIONES",
+      "pagina": 14,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iii-articulo-21"
+    },
+    {
+      "id": "capitulo-iii-articulo-22",
+      "tipo": "articulo",
+      "articulo": "22",
+      "capitulo_id": "capitulo-iii",
+      "capitulo": "DE LAS ATRIBUCIONES",
+      "pagina": 15,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iii-articulo-22"
+    },
+    {
+      "id": "capitulo-iii-articulo-23",
+      "tipo": "articulo",
+      "articulo": "23",
+      "capitulo_id": "capitulo-iii",
+      "capitulo": "DE LAS ATRIBUCIONES",
+      "pagina": 15,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iii-articulo-23"
+    },
+    {
+      "id": "capitulo-iii-articulo-24",
+      "tipo": "articulo",
+      "articulo": "24",
+      "capitulo_id": "capitulo-iii",
+      "capitulo": "DE LAS ATRIBUCIONES",
+      "pagina": 15,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iii-articulo-24"
+    },
+    {
+      "id": "capitulo-iii-articulo-25",
+      "tipo": "articulo",
+      "articulo": "25",
+      "capitulo_id": "capitulo-iii",
+      "capitulo": "DE LAS ATRIBUCIONES",
+      "pagina": 17,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iii-articulo-25"
+    },
+    {
+      "id": "capitulo-iii-articulo-25-bis",
+      "tipo": "articulo",
+      "articulo": "25 bis",
+      "capitulo_id": "capitulo-iii",
+      "capitulo": "DE LAS ATRIBUCIONES",
+      "pagina": 17,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iii-articulo-25-bis"
+    },
+    {
+      "id": "capitulo-iii-articulo-26",
+      "tipo": "articulo",
+      "articulo": "26",
+      "capitulo_id": "capitulo-iii",
+      "capitulo": "DE LAS ATRIBUCIONES",
+      "pagina": 17,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iii-articulo-26"
+    },
+    {
+      "id": "capitulo-iii-articulo-27",
+      "tipo": "articulo",
+      "articulo": "27",
+      "capitulo_id": "capitulo-iii",
+      "capitulo": "DE LAS ATRIBUCIONES",
+      "pagina": 17,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iii-articulo-27"
+    },
+    {
+      "id": "capitulo-iv",
+      "tipo": "capitulo",
+      "nombre": "DE LOS CONDUCTORES, PEATONES Y PASAJEROS"
+    },
+    {
+      "id": "capitulo-iv-articulo-28",
+      "tipo": "articulo",
+      "articulo": "28",
+      "capitulo_id": "capitulo-iv",
+      "capitulo": "DE LOS CONDUCTORES, PEATONES Y PASAJEROS",
+      "pagina": 18,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iv-articulo-28"
+    },
+    {
+      "id": "capitulo-iv-articulo-29",
+      "tipo": "articulo",
+      "articulo": "29",
+      "capitulo_id": "capitulo-iv",
+      "capitulo": "DE LOS CONDUCTORES, PEATONES Y PASAJEROS",
+      "pagina": 18,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iv-articulo-29"
+    },
+    {
+      "id": "capitulo-iv-articulo-30",
+      "tipo": "articulo",
+      "articulo": "30",
+      "capitulo_id": "capitulo-iv",
+      "capitulo": "DE LOS CONDUCTORES, PEATONES Y PASAJEROS",
+      "pagina": 18,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iv-articulo-30"
+    },
+    {
+      "id": "capitulo-iv-articulo-31",
+      "tipo": "articulo",
+      "articulo": "31",
+      "capitulo_id": "capitulo-iv",
+      "capitulo": "DE LOS CONDUCTORES, PEATONES Y PASAJEROS",
+      "pagina": 18,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iv-articulo-31"
+    },
+    {
+      "id": "capitulo-iv-articulo-31-bis",
+      "tipo": "articulo",
+      "articulo": "31 bis",
+      "capitulo_id": "capitulo-iv",
+      "capitulo": "DE LOS CONDUCTORES, PEATONES Y PASAJEROS",
+      "pagina": 18,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iv-articulo-31-bis"
+    },
+    {
+      "id": "capitulo-iv-articulo-32",
+      "tipo": "articulo",
+      "articulo": "32",
+      "capitulo_id": "capitulo-iv",
+      "capitulo": "DE LOS CONDUCTORES, PEATONES Y PASAJEROS",
+      "pagina": 19,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iv-articulo-32"
+    },
+    {
+      "id": "capitulo-iv-articulo-33",
+      "tipo": "articulo",
+      "articulo": "33",
+      "capitulo_id": "capitulo-iv",
+      "capitulo": "DE LOS CONDUCTORES, PEATONES Y PASAJEROS",
+      "pagina": 20,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iv-articulo-33"
+    },
+    {
+      "id": "capitulo-iv-articulo-34",
+      "tipo": "articulo",
+      "articulo": "34",
+      "capitulo_id": "capitulo-iv",
+      "capitulo": "DE LOS CONDUCTORES, PEATONES Y PASAJEROS",
+      "pagina": 20,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iv-articulo-34"
+    },
+    {
+      "id": "capitulo-iv-articulo-35",
+      "tipo": "articulo",
+      "articulo": "35",
+      "capitulo_id": "capitulo-iv",
+      "capitulo": "DE LOS CONDUCTORES, PEATONES Y PASAJEROS",
+      "pagina": 20,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iv-articulo-35"
+    },
+    {
+      "id": "capitulo-iv-articulo-35-bis",
+      "tipo": "articulo",
+      "articulo": "35 bis",
+      "capitulo_id": "capitulo-iv",
+      "capitulo": "DE LOS CONDUCTORES, PEATONES Y PASAJEROS",
+      "pagina": 20,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-iv-articulo-35-bis"
+    },
+    {
+      "id": "capitulo-v",
+      "tipo": "capitulo",
+      "nombre": "DE LOS VEHICULOS Y PROHIBICIONES"
+    },
+    {
+      "id": "capitulo-v-articulo-36",
+      "tipo": "articulo",
+      "articulo": "36",
+      "capitulo_id": "capitulo-v",
+      "capitulo": "DE LOS VEHICULOS Y PROHIBICIONES",
+      "pagina": 21,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-v-articulo-36"
+    },
+    {
+      "id": "capitulo-v-articulo-37",
+      "tipo": "articulo",
+      "articulo": "37",
+      "capitulo_id": "capitulo-v",
+      "capitulo": "DE LOS VEHICULOS Y PROHIBICIONES",
+      "pagina": 21,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-v-articulo-37"
+    },
+    {
+      "id": "capitulo-v-articulo-38",
+      "tipo": "articulo",
+      "articulo": "38",
+      "capitulo_id": "capitulo-v",
+      "capitulo": "DE LOS VEHICULOS Y PROHIBICIONES",
+      "pagina": 22,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-v-articulo-38"
+    },
+    {
+      "id": "capitulo-v-articulo-39",
+      "tipo": "articulo",
+      "articulo": "39",
+      "capitulo_id": "capitulo-v",
+      "capitulo": "DE LOS VEHICULOS Y PROHIBICIONES",
+      "pagina": 22,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-v-articulo-39"
+    },
+    {
+      "id": "capitulo-v-articulo-40",
+      "tipo": "articulo",
+      "articulo": "40",
+      "capitulo_id": "capitulo-v",
+      "capitulo": "DE LOS VEHICULOS Y PROHIBICIONES",
+      "pagina": 22,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-v-articulo-40"
+    },
+    {
+      "id": "capitulo-v-articulo-41",
+      "tipo": "articulo",
+      "articulo": "41",
+      "capitulo_id": "capitulo-v",
+      "capitulo": "DE LOS VEHICULOS Y PROHIBICIONES",
+      "pagina": 22,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-v-articulo-41"
+    },
+    {
+      "id": "capitulo-v-articulo-42",
+      "tipo": "articulo",
+      "articulo": "42",
+      "capitulo_id": "capitulo-v",
+      "capitulo": "DE LOS VEHICULOS Y PROHIBICIONES",
+      "pagina": 22,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-v-articulo-42"
+    },
+    {
+      "id": "capitulo-v-articulo-43",
+      "tipo": "articulo",
+      "articulo": "43",
+      "capitulo_id": "capitulo-v",
+      "capitulo": "DE LOS VEHICULOS Y PROHIBICIONES",
+      "pagina": 22,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-v-articulo-43"
+    },
+    {
+      "id": "capitulo-v-articulo-44",
+      "tipo": "articulo",
+      "articulo": "44",
+      "capitulo_id": "capitulo-v",
+      "capitulo": "DE LOS VEHICULOS Y PROHIBICIONES",
+      "pagina": 23,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-v-articulo-44"
+    },
+    {
+      "id": "capitulo-v-articulo-45",
+      "tipo": "articulo",
+      "articulo": "45",
+      "capitulo_id": "capitulo-v",
+      "capitulo": "DE LOS VEHICULOS Y PROHIBICIONES",
+      "pagina": 23,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-v-articulo-45"
+    },
+    {
+      "id": "capitulo-v-articulo-46",
+      "tipo": "articulo",
+      "articulo": "46",
+      "capitulo_id": "capitulo-v",
+      "capitulo": "DE LOS VEHICULOS Y PROHIBICIONES",
+      "pagina": 23,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-v-articulo-46"
+    },
+    {
+      "id": "capitulo-v-articulo-47-bis",
+      "tipo": "articulo",
+      "articulo": "47 bis",
+      "capitulo_id": "capitulo-v",
+      "capitulo": "DE LOS VEHICULOS Y PROHIBICIONES",
+      "pagina": 23,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-v-articulo-47-bis"
+    },
+    {
+      "id": "capitulo-v-articulo-47-ter",
+      "tipo": "articulo",
+      "articulo": "47 ter",
+      "capitulo_id": "capitulo-v",
+      "capitulo": "DE LOS VEHICULOS Y PROHIBICIONES",
+      "pagina": 23,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-v-articulo-47-ter"
+    },
+    {
+      "id": "capitulo-v-articulo-47-quáter",
+      "tipo": "articulo",
+      "articulo": "47 quáter",
+      "capitulo_id": "capitulo-v",
+      "capitulo": "DE LOS VEHICULOS Y PROHIBICIONES",
+      "pagina": 24,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-v-articulo-47-quáter"
+    },
+    {
+      "id": "capitulo-v-articulo-47",
+      "tipo": "articulo",
+      "articulo": "47",
+      "capitulo_id": "capitulo-v",
+      "capitulo": "DE LOS VEHICULOS Y PROHIBICIONES",
+      "pagina": 24,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-v-articulo-47"
+    },
+    {
+      "id": "capitulo-v-articulo-48",
+      "tipo": "articulo",
+      "articulo": "48",
+      "capitulo_id": "capitulo-v",
+      "capitulo": "DE LOS VEHICULOS Y PROHIBICIONES",
+      "pagina": 24,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-v-articulo-48"
+    },
+    {
+      "id": "capitulo-v-articulo-49",
+      "tipo": "articulo",
+      "articulo": "49",
+      "capitulo_id": "capitulo-v",
+      "capitulo": "DE LOS VEHICULOS Y PROHIBICIONES",
+      "pagina": 24,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-v-articulo-49"
+    },
+    {
+      "id": "capitulo-v-articulo-50",
+      "tipo": "articulo",
+      "articulo": "50",
+      "capitulo_id": "capitulo-v",
+      "capitulo": "DE LOS VEHICULOS Y PROHIBICIONES",
+      "pagina": 24,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-v-articulo-50"
+    },
+    {
+      "id": "capitulo-v-articulo-51",
+      "tipo": "articulo",
+      "articulo": "51",
+      "capitulo_id": "capitulo-v",
+      "capitulo": "DE LOS VEHICULOS Y PROHIBICIONES",
+      "pagina": 24,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-v-articulo-51"
+    },
+    {
+      "id": "capitulo-v-articulo-52",
+      "tipo": "articulo",
+      "articulo": "52",
+      "capitulo_id": "capitulo-v",
+      "capitulo": "DE LOS VEHICULOS Y PROHIBICIONES",
+      "pagina": 24,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-v-articulo-52"
+    },
+    {
+      "id": "capitulo-vi",
+      "tipo": "capitulo",
+      "nombre": "DE LOS MOTOCICLISTAS"
+    },
+    {
+      "id": "capitulo-vi-articulo-53",
+      "tipo": "articulo",
+      "articulo": "53",
+      "capitulo_id": "capitulo-vi",
+      "capitulo": "DE LOS MOTOCICLISTAS",
+      "pagina": 24,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-vi-articulo-53"
+    },
+    {
+      "id": "capitulo-vi-articulo-54",
+      "tipo": "articulo",
+      "articulo": "54",
+      "capitulo_id": "capitulo-vi",
+      "capitulo": "DE LOS MOTOCICLISTAS",
+      "pagina": 25,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-vi-articulo-54"
+    },
+    {
+      "id": "capitulo-vi-articulo-55",
+      "tipo": "articulo",
+      "articulo": "55",
+      "capitulo_id": "capitulo-vi",
+      "capitulo": "DE LOS MOTOCICLISTAS",
+      "pagina": 26,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-vi-articulo-55"
+    },
+    {
+      "id": "capitulo-vi-articulo-56",
+      "tipo": "articulo",
+      "articulo": "56",
+      "capitulo_id": "capitulo-vi",
+      "capitulo": "DE LOS MOTOCICLISTAS",
+      "pagina": 26,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-vi-articulo-56"
+    },
+    {
+      "id": "capitulo-vii",
+      "tipo": "capitulo",
+      "nombre": "DE LOS CICLISTAS"
+    },
+    {
+      "id": "capitulo-vii-articulo-57",
+      "tipo": "articulo",
+      "articulo": "57",
+      "capitulo_id": "capitulo-vii",
+      "capitulo": "DE LOS CICLISTAS",
+      "pagina": 26,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-vii-articulo-57"
+    },
+    {
+      "id": "capitulo-vii-articulo-58",
+      "tipo": "articulo",
+      "articulo": "58",
+      "capitulo_id": "capitulo-vii",
+      "capitulo": "DE LOS CICLISTAS",
+      "pagina": 27,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-vii-articulo-58"
+    },
+    {
+      "id": "capitulo-vii-articulo-59",
+      "tipo": "articulo",
+      "articulo": "59",
+      "capitulo_id": "capitulo-vii",
+      "capitulo": "DE LOS CICLISTAS",
+      "pagina": 27,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-vii-articulo-59"
+    },
+    {
+      "id": "capitulo-vii-articulo-60",
+      "tipo": "articulo",
+      "articulo": "60",
+      "capitulo_id": "capitulo-vii",
+      "capitulo": "DE LOS CICLISTAS",
+      "pagina": 27,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-vii-articulo-60"
+    },
+    {
+      "id": "capitulo-vii-articulo-61",
+      "tipo": "articulo",
+      "articulo": "61",
+      "capitulo_id": "capitulo-vii",
+      "capitulo": "DE LOS CICLISTAS",
+      "pagina": 27,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-vii-articulo-61"
+    },
+    {
+      "id": "capitulo-vii-articulo-62",
+      "tipo": "articulo",
+      "articulo": "62",
+      "capitulo_id": "capitulo-vii",
+      "capitulo": "DE LOS CICLISTAS",
+      "pagina": 28,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-vii-articulo-62"
+    },
+    {
+      "id": "capitulo-vii-articulo-63",
+      "tipo": "articulo",
+      "articulo": "63",
+      "capitulo_id": "capitulo-vii",
+      "capitulo": "DE LOS CICLISTAS",
+      "pagina": 28,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-vii-articulo-63"
+    },
+    {
+      "id": "capitulo-vii-articulo-64",
+      "tipo": "articulo",
+      "articulo": "64",
+      "capitulo_id": "capitulo-vii",
+      "capitulo": "DE LOS CICLISTAS",
+      "pagina": 28,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-vii-articulo-64"
+    },
+    {
+      "id": "capitulo-viii",
+      "tipo": "capitulo",
+      "nombre": "DE LAS ACTIVIDADES COLECTIVAS"
+    },
+    {
+      "id": "capitulo-viii-articulo-65",
+      "tipo": "articulo",
+      "articulo": "65",
+      "capitulo_id": "capitulo-viii",
+      "capitulo": "DE LAS ACTIVIDADES COLECTIVAS",
+      "pagina": 28,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-viii-articulo-65"
+    },
+    {
+      "id": "capitulo-viii-articulo-66",
+      "tipo": "articulo",
+      "articulo": "66",
+      "capitulo_id": "capitulo-viii",
+      "capitulo": "DE LAS ACTIVIDADES COLECTIVAS",
+      "pagina": 28,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-viii-articulo-66"
+    },
+    {
+      "id": "capitulo-viii-articulo-67",
+      "tipo": "articulo",
+      "articulo": "67",
+      "capitulo_id": "capitulo-viii",
+      "capitulo": "DE LAS ACTIVIDADES COLECTIVAS",
+      "pagina": 29,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-viii-articulo-67"
+    },
+    {
+      "id": "capitulo-viii-articulo-68",
+      "tipo": "articulo",
+      "articulo": "68",
+      "capitulo_id": "capitulo-viii",
+      "capitulo": "DE LAS ACTIVIDADES COLECTIVAS",
+      "pagina": 29,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-viii-articulo-68"
+    },
+    {
+      "id": "capitulo-viii-articulo-69",
+      "tipo": "articulo",
+      "articulo": "69",
+      "capitulo_id": "capitulo-viii",
+      "capitulo": "DE LAS ACTIVIDADES COLECTIVAS",
+      "pagina": 29,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-viii-articulo-69"
+    },
+    {
+      "id": "capitulo-viii-articulo-70",
+      "tipo": "articulo",
+      "articulo": "70",
+      "capitulo_id": "capitulo-viii",
+      "capitulo": "DE LAS ACTIVIDADES COLECTIVAS",
+      "pagina": 29,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-viii-articulo-70"
+    },
+    {
+      "id": "capitulo-ix",
+      "tipo": "capitulo",
+      "nombre": "DE LOS TRABAJOS EVENTUALES EN LA VÍA PÚBLICA"
+    },
+    {
+      "id": "capitulo-ix-articulo-71",
+      "tipo": "articulo",
+      "articulo": "71",
+      "capitulo_id": "capitulo-ix",
+      "capitulo": "DE LOS TRABAJOS EVENTUALES EN LA VÍA PÚBLICA",
+      "pagina": 29,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-ix-articulo-71"
+    },
+    {
+      "id": "capitulo-ix-articulo-72",
+      "tipo": "articulo",
+      "articulo": "72",
+      "capitulo_id": "capitulo-ix",
+      "capitulo": "DE LOS TRABAJOS EVENTUALES EN LA VÍA PÚBLICA",
+      "pagina": 29,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-ix-articulo-72"
+    },
+    {
+      "id": "capitulo-ix-articulo-73",
+      "tipo": "articulo",
+      "articulo": "73",
+      "capitulo_id": "capitulo-ix",
+      "capitulo": "DE LOS TRABAJOS EVENTUALES EN LA VÍA PÚBLICA",
+      "pagina": 30,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-ix-articulo-73"
+    },
+    {
+      "id": "capitulo-ix-articulo-74",
+      "tipo": "articulo",
+      "articulo": "74",
+      "capitulo_id": "capitulo-ix",
+      "capitulo": "DE LOS TRABAJOS EVENTUALES EN LA VÍA PÚBLICA",
+      "pagina": 30,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-ix-articulo-74"
+    },
+    {
+      "id": "capitulo-x",
+      "tipo": "capitulo",
+      "nombre": "DE LA PROTECCIÓN AMBIENTAL"
+    },
+    {
+      "id": "capitulo-x-articulo-75",
+      "tipo": "articulo",
+      "articulo": "75",
+      "capitulo_id": "capitulo-x",
+      "capitulo": "DE LA PROTECCIÓN AMBIENTAL",
+      "pagina": 30,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-x-articulo-75"
+    },
+    {
+      "id": "capitulo-x-articulo-76",
+      "tipo": "articulo",
+      "articulo": "76",
+      "capitulo_id": "capitulo-x",
+      "capitulo": "DE LA PROTECCIÓN AMBIENTAL",
+      "pagina": 30,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-x-articulo-76"
+    },
+    {
+      "id": "capitulo-x-articulo-77",
+      "tipo": "articulo",
+      "articulo": "77",
+      "capitulo_id": "capitulo-x",
+      "capitulo": "DE LA PROTECCIÓN AMBIENTAL",
+      "pagina": 30,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-x-articulo-77"
+    },
+    {
+      "id": "capitulo-x-articulo-78",
+      "tipo": "articulo",
+      "articulo": "78",
+      "capitulo_id": "capitulo-x",
+      "capitulo": "DE LA PROTECCIÓN AMBIENTAL",
+      "pagina": 30,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-x-articulo-78"
+    },
+    {
+      "id": "capitulo-x-articulo-79",
+      "tipo": "articulo",
+      "articulo": "79",
+      "capitulo_id": "capitulo-x",
+      "capitulo": "DE LA PROTECCIÓN AMBIENTAL",
+      "pagina": 30,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-x-articulo-79"
+    },
+    {
+      "id": "capitulo-x-articulo-80",
+      "tipo": "articulo",
+      "articulo": "80",
+      "capitulo_id": "capitulo-x",
+      "capitulo": "DE LA PROTECCIÓN AMBIENTAL",
+      "pagina": 31,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-x-articulo-80"
+    },
+    {
+      "id": "capitulo-xi",
+      "tipo": "capitulo",
+      "nombre": "DE LOS DAÑOS Y ACCIDENTES"
+    },
+    {
+      "id": "capitulo-xi-articulo-81",
+      "tipo": "articulo",
+      "articulo": "81",
+      "capitulo_id": "capitulo-xi",
+      "capitulo": "DE LOS DAÑOS Y ACCIDENTES",
+      "pagina": 31,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xi-articulo-81"
+    },
+    {
+      "id": "capitulo-xi-articulo-82",
+      "tipo": "articulo",
+      "articulo": "82",
+      "capitulo_id": "capitulo-xi",
+      "capitulo": "DE LOS DAÑOS Y ACCIDENTES",
+      "pagina": 31,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xi-articulo-82"
+    },
+    {
+      "id": "capitulo-xi-articulo-83",
+      "tipo": "articulo",
+      "articulo": "83",
+      "capitulo_id": "capitulo-xi",
+      "capitulo": "DE LOS DAÑOS Y ACCIDENTES",
+      "pagina": 31,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xi-articulo-83"
+    },
+    {
+      "id": "capitulo-xii",
+      "tipo": "capitulo",
+      "nombre": "DE LOS OPERATIVOS"
+    },
+    {
+      "id": "capitulo-xii-articulo-84",
+      "tipo": "articulo",
+      "articulo": "84",
+      "capitulo_id": "capitulo-xii",
+      "capitulo": "DE LOS OPERATIVOS",
+      "pagina": 31,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xii-articulo-84"
+    },
+    {
+      "id": "capitulo-xii-articulo-85",
+      "tipo": "articulo",
+      "articulo": "85",
+      "capitulo_id": "capitulo-xii",
+      "capitulo": "DE LOS OPERATIVOS",
+      "pagina": 32,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xii-articulo-85"
+    },
+    {
+      "id": "capitulo-xii-articulo-85-bis",
+      "tipo": "articulo",
+      "articulo": "85 bis",
+      "capitulo_id": "capitulo-xii",
+      "capitulo": "DE LOS OPERATIVOS",
+      "pagina": 32,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xii-articulo-85-bis"
+    },
+    {
+      "id": "capitulo-xii-articulo-85-ter",
+      "tipo": "articulo",
+      "articulo": "85 ter",
+      "capitulo_id": "capitulo-xii",
+      "capitulo": "DE LOS OPERATIVOS",
+      "pagina": 32,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xii-articulo-85-ter"
+    },
+    {
+      "id": "capitulo-xii-articulo-86",
+      "tipo": "articulo",
+      "articulo": "86",
+      "capitulo_id": "capitulo-xii",
+      "capitulo": "DE LOS OPERATIVOS",
+      "pagina": 33,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xii-articulo-86"
+    },
+    {
+      "id": "capitulo-xii-articulo-87",
+      "tipo": "articulo",
+      "articulo": "87",
+      "capitulo_id": "capitulo-xii",
+      "capitulo": "DE LOS OPERATIVOS",
+      "pagina": 33,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xii-articulo-87"
+    },
+    {
+      "id": "capitulo-xii-articulo-88",
+      "tipo": "articulo",
+      "articulo": "88",
+      "capitulo_id": "capitulo-xii",
+      "capitulo": "DE LOS OPERATIVOS",
+      "pagina": 33,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xii-articulo-88"
+    },
+    {
+      "id": "capitulo-xii-articulo-88-bis",
+      "tipo": "articulo",
+      "articulo": "88 bis",
+      "capitulo_id": "capitulo-xii",
+      "capitulo": "DE LOS OPERATIVOS",
+      "pagina": 33,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xii-articulo-88-bis"
+    },
+    {
+      "id": "capitulo-xii-articulo-88-ter",
+      "tipo": "articulo",
+      "articulo": "88 ter",
+      "capitulo_id": "capitulo-xii",
+      "capitulo": "DE LOS OPERATIVOS",
+      "pagina": 33,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xii-articulo-88-ter"
+    },
+    {
+      "id": "capitulo-xii-articulo-88-quáter",
+      "tipo": "articulo",
+      "articulo": "88 quáter",
+      "capitulo_id": "capitulo-xii",
+      "capitulo": "DE LOS OPERATIVOS",
+      "pagina": 33,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xii-articulo-88-quáter"
+    },
+    {
+      "id": "capitulo-xii-articulo-88-quinquies",
+      "tipo": "articulo",
+      "articulo": "88 quinquies",
+      "capitulo_id": "capitulo-xii",
+      "capitulo": "DE LOS OPERATIVOS",
+      "pagina": 34,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xii-articulo-88-quinquies"
+    },
+    {
+      "id": "capitulo-xiii",
+      "tipo": "capitulo",
+      "nombre": "DE LA CULTURA Y EDUCACIÓN VIAL"
+    },
+    {
+      "id": "capitulo-xiii-articulo-89",
+      "tipo": "articulo",
+      "articulo": "89",
+      "capitulo_id": "capitulo-xiii",
+      "capitulo": "DE LA CULTURA Y EDUCACIÓN VIAL",
+      "pagina": 35,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xiii-articulo-89"
+    },
+    {
+      "id": "capitulo-xiii-articulo-90",
+      "tipo": "articulo",
+      "articulo": "90",
+      "capitulo_id": "capitulo-xiii",
+      "capitulo": "DE LA CULTURA Y EDUCACIÓN VIAL",
+      "pagina": 35,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xiii-articulo-90"
+    },
+    {
+      "id": "capitulo-xiii-articulo-91",
+      "tipo": "articulo",
+      "articulo": "91",
+      "capitulo_id": "capitulo-xiii",
+      "capitulo": "DE LA CULTURA Y EDUCACIÓN VIAL",
+      "pagina": 35,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xiii-articulo-91"
+    },
+    {
+      "id": "capitulo-xiv",
+      "tipo": "capitulo",
+      "nombre": "DE LAS SANCIONES, EJECUCIÓN Y RECURSOS"
+    },
+    {
+      "id": "capitulo-xiv-articulo-92",
+      "tipo": "articulo",
+      "articulo": "92",
+      "capitulo_id": "capitulo-xiv",
+      "capitulo": "DE LAS SANCIONES, EJECUCIÓN Y RECURSOS",
+      "pagina": 36,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xiv-articulo-92"
+    },
+    {
+      "id": "capitulo-xiv-articulo-93",
+      "tipo": "articulo",
+      "articulo": "93",
+      "capitulo_id": "capitulo-xiv",
+      "capitulo": "DE LAS SANCIONES, EJECUCIÓN Y RECURSOS",
+      "pagina": 36,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xiv-articulo-93"
+    },
+    {
+      "id": "capitulo-xiv-articulo-94",
+      "tipo": "articulo",
+      "articulo": "94",
+      "capitulo_id": "capitulo-xiv",
+      "capitulo": "DE LAS SANCIONES, EJECUCIÓN Y RECURSOS",
+      "pagina": 37,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xiv-articulo-94"
+    },
+    {
+      "id": "capitulo-xiv-articulo-95",
+      "tipo": "articulo",
+      "articulo": "95",
+      "capitulo_id": "capitulo-xiv",
+      "capitulo": "DE LAS SANCIONES, EJECUCIÓN Y RECURSOS",
+      "pagina": 38,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xiv-articulo-95"
+    },
+    {
+      "id": "capitulo-xiv-articulo-96",
+      "tipo": "articulo",
+      "articulo": "96",
+      "capitulo_id": "capitulo-xiv",
+      "capitulo": "DE LAS SANCIONES, EJECUCIÓN Y RECURSOS",
+      "pagina": 38,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xiv-articulo-96"
+    },
+    {
+      "id": "capitulo-xiv-articulo-97",
+      "tipo": "articulo",
+      "articulo": "97",
+      "capitulo_id": "capitulo-xiv",
+      "capitulo": "DE LAS SANCIONES, EJECUCIÓN Y RECURSOS",
+      "pagina": 38,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xiv-articulo-97"
+    },
+    {
+      "id": "capitulo-xiv-articulo-98",
+      "tipo": "articulo",
+      "articulo": "98",
+      "capitulo_id": "capitulo-xiv",
+      "capitulo": "DE LAS SANCIONES, EJECUCIÓN Y RECURSOS",
+      "pagina": 38,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xiv-articulo-98"
+    },
+    {
+      "id": "capitulo-xiv-articulo-99",
+      "tipo": "articulo",
+      "articulo": "99",
+      "capitulo_id": "capitulo-xiv",
+      "capitulo": "DE LAS SANCIONES, EJECUCIÓN Y RECURSOS",
+      "pagina": 38,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xiv-articulo-99"
+    },
+    {
+      "id": "capitulo-xiv-articulo-100",
+      "tipo": "articulo",
+      "articulo": "100",
+      "capitulo_id": "capitulo-xiv",
+      "capitulo": "DE LAS SANCIONES, EJECUCIÓN Y RECURSOS",
+      "pagina": 39,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xiv-articulo-100"
+    },
+    {
+      "id": "capitulo-xiv-articulo-101",
+      "tipo": "articulo",
+      "articulo": "101",
+      "capitulo_id": "capitulo-xiv",
+      "capitulo": "DE LAS SANCIONES, EJECUCIÓN Y RECURSOS",
+      "pagina": 39,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xiv-articulo-101"
+    },
+    {
+      "id": "capitulo-xiv-articulo-24",
+      "tipo": "articulo",
+      "articulo": "24",
+      "capitulo_id": "capitulo-xiv",
+      "capitulo": "DE LAS SANCIONES, EJECUCIÓN Y RECURSOS",
+      "pagina": 41,
+      "fuente": "Ley_de_Transito_y_vialidad_(Ref_dto_752_aprob_LXVI_Legis_2_sep_2025_PO_38_8a_secc_20_sep_2025).pdf",
+      "unidad_id": "capitulo-xiv-articulo-24"
+    }
+  ],
+  "edges": [
+    {
+      "source": "capitulo-i",
+      "target": "capitulo-i-articulo-1",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-i",
+      "target": "capitulo-i-articulo-2",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-i-articulo-1",
+      "target": "capitulo-i-articulo-2",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-i",
+      "target": "capitulo-i-articulo-3",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-i-articulo-2",
+      "target": "capitulo-i-articulo-3",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-i",
+      "target": "capitulo-i-articulo-4",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-i-articulo-3",
+      "target": "capitulo-i-articulo-4",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-i",
+      "target": "capitulo-i-articulo-5",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-i-articulo-4",
+      "target": "capitulo-i-articulo-5",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-ii",
+      "target": "capitulo-ii-articulo-6",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-i-articulo-5",
+      "target": "capitulo-ii-articulo-6",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-ii",
+      "target": "capitulo-ii-articulo-7",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-ii-articulo-6",
+      "target": "capitulo-ii-articulo-7",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-ii",
+      "target": "capitulo-ii-articulo-8",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-ii-articulo-7",
+      "target": "capitulo-ii-articulo-8",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iii",
+      "target": "capitulo-iii-articulo-9",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-ii-articulo-8",
+      "target": "capitulo-iii-articulo-9",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iii",
+      "target": "capitulo-iii-articulo-10",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iii-articulo-9",
+      "target": "capitulo-iii-articulo-10",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iii",
+      "target": "capitulo-iii-articulo-11",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iii-articulo-10",
+      "target": "capitulo-iii-articulo-11",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iii",
+      "target": "capitulo-iii-articulo-12",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iii-articulo-11",
+      "target": "capitulo-iii-articulo-12",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iii",
+      "target": "capitulo-iii-articulo-13",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iii-articulo-12",
+      "target": "capitulo-iii-articulo-13",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iii",
+      "target": "capitulo-iii-articulo-14",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iii-articulo-13",
+      "target": "capitulo-iii-articulo-14",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iii",
+      "target": "capitulo-iii-articulo-15",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iii-articulo-14",
+      "target": "capitulo-iii-articulo-15",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iii",
+      "target": "capitulo-iii-articulo-16",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iii-articulo-15",
+      "target": "capitulo-iii-articulo-16",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iii",
+      "target": "capitulo-iii-articulo-17",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iii-articulo-16",
+      "target": "capitulo-iii-articulo-17",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iii",
+      "target": "capitulo-iii-articulo-18",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iii-articulo-17",
+      "target": "capitulo-iii-articulo-18",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iii",
+      "target": "capitulo-iii-articulo-19",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iii-articulo-18",
+      "target": "capitulo-iii-articulo-19",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iii",
+      "target": "capitulo-iii-articulo-20",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iii-articulo-19",
+      "target": "capitulo-iii-articulo-20",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iii",
+      "target": "capitulo-iii-articulo-21",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iii-articulo-20",
+      "target": "capitulo-iii-articulo-21",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iii",
+      "target": "capitulo-iii-articulo-22",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iii-articulo-21",
+      "target": "capitulo-iii-articulo-22",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iii",
+      "target": "capitulo-iii-articulo-23",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iii-articulo-22",
+      "target": "capitulo-iii-articulo-23",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iii",
+      "target": "capitulo-iii-articulo-24",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iii-articulo-23",
+      "target": "capitulo-iii-articulo-24",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iii",
+      "target": "capitulo-iii-articulo-25",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iii-articulo-24",
+      "target": "capitulo-iii-articulo-25",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iii",
+      "target": "capitulo-iii-articulo-25-bis",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iii-articulo-25",
+      "target": "capitulo-iii-articulo-25-bis",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iii",
+      "target": "capitulo-iii-articulo-26",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iii-articulo-25-bis",
+      "target": "capitulo-iii-articulo-26",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iii",
+      "target": "capitulo-iii-articulo-27",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iii-articulo-26",
+      "target": "capitulo-iii-articulo-27",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iv",
+      "target": "capitulo-iv-articulo-28",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iii-articulo-27",
+      "target": "capitulo-iv-articulo-28",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iv",
+      "target": "capitulo-iv-articulo-29",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iv-articulo-28",
+      "target": "capitulo-iv-articulo-29",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iv",
+      "target": "capitulo-iv-articulo-30",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iv-articulo-29",
+      "target": "capitulo-iv-articulo-30",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iv",
+      "target": "capitulo-iv-articulo-31",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iv-articulo-30",
+      "target": "capitulo-iv-articulo-31",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iv",
+      "target": "capitulo-iv-articulo-31-bis",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iv-articulo-31",
+      "target": "capitulo-iv-articulo-31-bis",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iv",
+      "target": "capitulo-iv-articulo-32",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iv-articulo-31-bis",
+      "target": "capitulo-iv-articulo-32",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iv",
+      "target": "capitulo-iv-articulo-33",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iv-articulo-32",
+      "target": "capitulo-iv-articulo-33",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iv",
+      "target": "capitulo-iv-articulo-34",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iv-articulo-33",
+      "target": "capitulo-iv-articulo-34",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iv",
+      "target": "capitulo-iv-articulo-35",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iv-articulo-34",
+      "target": "capitulo-iv-articulo-35",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-iv",
+      "target": "capitulo-iv-articulo-35-bis",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iv-articulo-35",
+      "target": "capitulo-iv-articulo-35-bis",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-v",
+      "target": "capitulo-v-articulo-36",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-iv-articulo-35-bis",
+      "target": "capitulo-v-articulo-36",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-v",
+      "target": "capitulo-v-articulo-37",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-v-articulo-36",
+      "target": "capitulo-v-articulo-37",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-v",
+      "target": "capitulo-v-articulo-38",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-v-articulo-37",
+      "target": "capitulo-v-articulo-38",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-v",
+      "target": "capitulo-v-articulo-39",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-v-articulo-38",
+      "target": "capitulo-v-articulo-39",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-v",
+      "target": "capitulo-v-articulo-40",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-v-articulo-39",
+      "target": "capitulo-v-articulo-40",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-v",
+      "target": "capitulo-v-articulo-41",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-v-articulo-40",
+      "target": "capitulo-v-articulo-41",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-v",
+      "target": "capitulo-v-articulo-42",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-v-articulo-41",
+      "target": "capitulo-v-articulo-42",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-v",
+      "target": "capitulo-v-articulo-43",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-v-articulo-42",
+      "target": "capitulo-v-articulo-43",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-v",
+      "target": "capitulo-v-articulo-44",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-v-articulo-43",
+      "target": "capitulo-v-articulo-44",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-v",
+      "target": "capitulo-v-articulo-45",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-v-articulo-44",
+      "target": "capitulo-v-articulo-45",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-v",
+      "target": "capitulo-v-articulo-46",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-v-articulo-45",
+      "target": "capitulo-v-articulo-46",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-v",
+      "target": "capitulo-v-articulo-47-bis",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-v-articulo-46",
+      "target": "capitulo-v-articulo-47-bis",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-v",
+      "target": "capitulo-v-articulo-47-ter",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-v-articulo-47-bis",
+      "target": "capitulo-v-articulo-47-ter",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-v",
+      "target": "capitulo-v-articulo-47-quáter",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-v-articulo-47-ter",
+      "target": "capitulo-v-articulo-47-quáter",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-v",
+      "target": "capitulo-v-articulo-47",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-v-articulo-47-quáter",
+      "target": "capitulo-v-articulo-47",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-v",
+      "target": "capitulo-v-articulo-48",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-v-articulo-47",
+      "target": "capitulo-v-articulo-48",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-v",
+      "target": "capitulo-v-articulo-49",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-v-articulo-48",
+      "target": "capitulo-v-articulo-49",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-v",
+      "target": "capitulo-v-articulo-50",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-v-articulo-49",
+      "target": "capitulo-v-articulo-50",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-v",
+      "target": "capitulo-v-articulo-51",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-v-articulo-50",
+      "target": "capitulo-v-articulo-51",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-v",
+      "target": "capitulo-v-articulo-52",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-v-articulo-51",
+      "target": "capitulo-v-articulo-52",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-vi",
+      "target": "capitulo-vi-articulo-53",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-v-articulo-52",
+      "target": "capitulo-vi-articulo-53",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-vi",
+      "target": "capitulo-vi-articulo-54",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-vi-articulo-53",
+      "target": "capitulo-vi-articulo-54",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-vi",
+      "target": "capitulo-vi-articulo-55",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-vi-articulo-54",
+      "target": "capitulo-vi-articulo-55",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-vi",
+      "target": "capitulo-vi-articulo-56",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-vi-articulo-55",
+      "target": "capitulo-vi-articulo-56",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-vii",
+      "target": "capitulo-vii-articulo-57",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-vi-articulo-56",
+      "target": "capitulo-vii-articulo-57",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-vii",
+      "target": "capitulo-vii-articulo-58",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-vii-articulo-57",
+      "target": "capitulo-vii-articulo-58",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-vii",
+      "target": "capitulo-vii-articulo-59",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-vii-articulo-58",
+      "target": "capitulo-vii-articulo-59",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-vii",
+      "target": "capitulo-vii-articulo-60",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-vii-articulo-59",
+      "target": "capitulo-vii-articulo-60",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-vii",
+      "target": "capitulo-vii-articulo-61",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-vii-articulo-60",
+      "target": "capitulo-vii-articulo-61",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-vii",
+      "target": "capitulo-vii-articulo-62",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-vii-articulo-61",
+      "target": "capitulo-vii-articulo-62",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-vii",
+      "target": "capitulo-vii-articulo-63",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-vii-articulo-62",
+      "target": "capitulo-vii-articulo-63",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-vii",
+      "target": "capitulo-vii-articulo-64",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-vii-articulo-63",
+      "target": "capitulo-vii-articulo-64",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-viii",
+      "target": "capitulo-viii-articulo-65",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-vii-articulo-64",
+      "target": "capitulo-viii-articulo-65",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-viii",
+      "target": "capitulo-viii-articulo-66",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-viii-articulo-65",
+      "target": "capitulo-viii-articulo-66",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-viii",
+      "target": "capitulo-viii-articulo-67",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-viii-articulo-66",
+      "target": "capitulo-viii-articulo-67",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-viii",
+      "target": "capitulo-viii-articulo-68",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-viii-articulo-67",
+      "target": "capitulo-viii-articulo-68",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-viii",
+      "target": "capitulo-viii-articulo-69",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-viii-articulo-68",
+      "target": "capitulo-viii-articulo-69",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-viii",
+      "target": "capitulo-viii-articulo-70",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-viii-articulo-69",
+      "target": "capitulo-viii-articulo-70",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-ix",
+      "target": "capitulo-ix-articulo-71",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-viii-articulo-70",
+      "target": "capitulo-ix-articulo-71",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-ix",
+      "target": "capitulo-ix-articulo-72",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-ix-articulo-71",
+      "target": "capitulo-ix-articulo-72",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-ix",
+      "target": "capitulo-ix-articulo-73",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-ix-articulo-72",
+      "target": "capitulo-ix-articulo-73",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-ix",
+      "target": "capitulo-ix-articulo-74",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-ix-articulo-73",
+      "target": "capitulo-ix-articulo-74",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-x",
+      "target": "capitulo-x-articulo-75",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-ix-articulo-74",
+      "target": "capitulo-x-articulo-75",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-x",
+      "target": "capitulo-x-articulo-76",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-x-articulo-75",
+      "target": "capitulo-x-articulo-76",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-x",
+      "target": "capitulo-x-articulo-77",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-x-articulo-76",
+      "target": "capitulo-x-articulo-77",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-x",
+      "target": "capitulo-x-articulo-78",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-x-articulo-77",
+      "target": "capitulo-x-articulo-78",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-x",
+      "target": "capitulo-x-articulo-79",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-x-articulo-78",
+      "target": "capitulo-x-articulo-79",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-x",
+      "target": "capitulo-x-articulo-80",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-x-articulo-79",
+      "target": "capitulo-x-articulo-80",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xi",
+      "target": "capitulo-xi-articulo-81",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-x-articulo-80",
+      "target": "capitulo-xi-articulo-81",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xi",
+      "target": "capitulo-xi-articulo-82",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xi-articulo-81",
+      "target": "capitulo-xi-articulo-82",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xi",
+      "target": "capitulo-xi-articulo-83",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xi-articulo-82",
+      "target": "capitulo-xi-articulo-83",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xii",
+      "target": "capitulo-xii-articulo-84",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xi-articulo-83",
+      "target": "capitulo-xii-articulo-84",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xii",
+      "target": "capitulo-xii-articulo-85",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xii-articulo-84",
+      "target": "capitulo-xii-articulo-85",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xii",
+      "target": "capitulo-xii-articulo-85-bis",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xii-articulo-85",
+      "target": "capitulo-xii-articulo-85-bis",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xii",
+      "target": "capitulo-xii-articulo-85-ter",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xii-articulo-85-bis",
+      "target": "capitulo-xii-articulo-85-ter",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xii",
+      "target": "capitulo-xii-articulo-86",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xii-articulo-85-ter",
+      "target": "capitulo-xii-articulo-86",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xii",
+      "target": "capitulo-xii-articulo-87",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xii-articulo-86",
+      "target": "capitulo-xii-articulo-87",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xii",
+      "target": "capitulo-xii-articulo-88",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xii-articulo-87",
+      "target": "capitulo-xii-articulo-88",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xii",
+      "target": "capitulo-xii-articulo-88-bis",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xii-articulo-88",
+      "target": "capitulo-xii-articulo-88-bis",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xii",
+      "target": "capitulo-xii-articulo-88-ter",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xii-articulo-88-bis",
+      "target": "capitulo-xii-articulo-88-ter",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xii",
+      "target": "capitulo-xii-articulo-88-quáter",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xii-articulo-88-ter",
+      "target": "capitulo-xii-articulo-88-quáter",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xii",
+      "target": "capitulo-xii-articulo-88-quinquies",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xii-articulo-88-quáter",
+      "target": "capitulo-xii-articulo-88-quinquies",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xiii",
+      "target": "capitulo-xiii-articulo-89",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xii-articulo-88-quinquies",
+      "target": "capitulo-xiii-articulo-89",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xiii",
+      "target": "capitulo-xiii-articulo-90",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xiii-articulo-89",
+      "target": "capitulo-xiii-articulo-90",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xiii",
+      "target": "capitulo-xiii-articulo-91",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xiii-articulo-90",
+      "target": "capitulo-xiii-articulo-91",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xiv",
+      "target": "capitulo-xiv-articulo-92",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xiii-articulo-91",
+      "target": "capitulo-xiv-articulo-92",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xiv",
+      "target": "capitulo-xiv-articulo-93",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xiv-articulo-92",
+      "target": "capitulo-xiv-articulo-93",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xiv",
+      "target": "capitulo-xiv-articulo-94",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xiv-articulo-93",
+      "target": "capitulo-xiv-articulo-94",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xiv",
+      "target": "capitulo-xiv-articulo-95",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xiv-articulo-94",
+      "target": "capitulo-xiv-articulo-95",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xiv",
+      "target": "capitulo-xiv-articulo-96",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xiv-articulo-95",
+      "target": "capitulo-xiv-articulo-96",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xiv",
+      "target": "capitulo-xiv-articulo-97",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xiv-articulo-96",
+      "target": "capitulo-xiv-articulo-97",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xiv",
+      "target": "capitulo-xiv-articulo-98",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xiv-articulo-97",
+      "target": "capitulo-xiv-articulo-98",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xiv",
+      "target": "capitulo-xiv-articulo-99",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xiv-articulo-98",
+      "target": "capitulo-xiv-articulo-99",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xiv",
+      "target": "capitulo-xiv-articulo-100",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xiv-articulo-99",
+      "target": "capitulo-xiv-articulo-100",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xiv",
+      "target": "capitulo-xiv-articulo-101",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xiv-articulo-100",
+      "target": "capitulo-xiv-articulo-101",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "capitulo-xiv",
+      "target": "capitulo-xiv-articulo-24",
+      "relacion": "contiene"
+    },
+    {
+      "source": "capitulo-xiv-articulo-101",
+      "target": "capitulo-xiv-articulo-24",
+      "relacion": "siguiente"
+    }
+  ]
+}
