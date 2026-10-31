@@ -6,3 +6,5 @@ python-dotenv>=1.0
 
 # Pruebas (tests/)
 pytest>=8.0
+
+python-telegram-bot>=21
