@@ -65,6 +65,9 @@ MSG_NOT_FOUND = (
     "o indica la ley o el número de artículo."
 )
 MSG_GENERIC_ERROR = "Ocurrió un problema al procesar tu consulta. Inténtalo de nuevo en un momento."
+DISCLAIMER = (
+    "⚖️ Orientación basada en el texto de las normas; no sustituye asesoría legal profesional."
+)
 
 # --------------------------------------------------------------------------- texto
 
@@ -337,10 +340,11 @@ SYSTEM_PROMPT = (
     "Usa ÚNICAMENTE el contexto legal dado. Prioriza el Reglamento de Tránsito Metropolitano "
     "de Oaxaca de Juárez; usa las leyes estatales solo si complementan o el reglamento no lo cubre, "
     "y dilo en una frase. Las «iniciativas» son propuestas, no normas vigentes.\n"
-    "FORMATO: responde en español, directo y conciso, máximo 4 líneas (unas 60 palabras). "
-    "Empieza con la respuesta concreta (qué pasa, qué se debe hacer, cuánto cuesta) sin saludo "
-    "ni introducción. Cierra con la fuente entre paréntesis, p. ej. (Reglamento municipal, "
-    "Art. 12). Sin listas largas, sin repetir la pregunta y sin avisos legales.\n"
+    "FORMATO: responde en español, de forma concisa y sin redundancia: empieza con la respuesta "
+    "concreta (qué pasa, qué se debe hacer, cuánto cuesta), sin saludo ni introducción, sin repetir "
+    "la pregunta ni decir lo mismo dos veces. Incluye los detalles que importen (montos, plazos, "
+    "requisitos) y nada más. Cita la fuente entre paréntesis, p. ej. (Reglamento municipal, "
+    "Art. 12). No agregues avisos legales: se añaden aparte.\n"
     "El texto puede tener errores de OCR: interprétalo con cuidado. Si el contexto no responde, "
     "dilo en una frase y no inventes artículos, montos ni plazos."
 )
@@ -355,7 +359,7 @@ def clean_history(history) -> list[dict]:
         if isinstance(m, dict) and m.get("role") in ("user", "assistant"):
             content = m.get("content")
             if isinstance(content, str) and content.strip():
-                out.append({"role": m["role"], "content": content.strip()[:HISTORY_CHARS]})
+                out.append({"role": m["role"], "content": content.replace(DISCLAIMER, "").strip()[:HISTORY_CHARS]})
     return out[-HISTORY_MESSAGES:]
 
 
@@ -490,10 +494,10 @@ class GraphRAGEngine:
             return MSG_NOT_FOUND
         messages = build_messages(question, r.passages, clean_history(history), r.low_confidence)
         try:
-            return _call_groq(messages)
+            return f"{_call_groq(messages)}\n\n{DISCLAIMER}"
         except RuntimeError as e:
             log.warning("Modo degradado: %s", e)
-            return degraded_answer(r.passages)
+            return f"{degraded_answer(r.passages)}\n\n{DISCLAIMER}"
 
 
 _engine: GraphRAGEngine | None = None

@@ -166,4 +166,19 @@ def test_article_without_law_prefers_municipal(graph):
 
 def test_prompt_is_concise_and_municipal():
     p = rag.SYSTEM_PROMPT
-    assert "Oaxaca de Juárez" in p and "máximo 4 líneas" in p
+    assert "Oaxaca de Juárez" in p and "sin redundancia" in p
+
+
+def test_disclaimer_added_once_and_stripped_from_history(monkeypatch):
+    monkeypatch.setattr(rag, "_engine", None)
+    monkeypatch.setattr(rag, "_call_groq", lambda *a, **k: "Respuesta corta (Art. 1).")
+    out = rag.ask_rag("multa por estacionarse en doble fila")
+    assert out.count(rag.DISCLAIMER) == 1 and out.startswith("Respuesta corta")
+    h = rag.clean_history([{"role": "assistant", "content": out}])
+    assert rag.DISCLAIMER not in h[0]["content"]
+
+
+def test_disclaimer_in_degraded_mode(monkeypatch):
+    monkeypatch.setattr(rag, "_engine", None)
+    monkeypatch.delenv("GROQ_API_KEY", raising=False)
+    assert rag.DISCLAIMER in rag.ask_rag("me remolcaron la troca")
