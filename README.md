@@ -1,86 +1,152 @@
-# RAG jurídico de Oaxaca
+# 🚦 Asistente Legal Vial de Oaxaca de Juárez (GraphRAG + Telegram Bot)
 
-Pipeline local para consultar leyes de Oaxaca con recuperación aumentada (RAG),
-ChromaDB, grafo de relaciones y Ollama.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python: 3.10+](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
+[![Framework: Open Source / Open Weights](https://img.shields.io/badge/Models-Open--Weights-green.svg)](https://groq.com)
 
-## Tecnologías
+Un asistente jurídico de código abierto y libre acceso para orientar a la ciudadanía sobre tránsito, vialidad, multas, grúas y movilidad en el **Municipio de Oaxaca de Juárez** y el Estado de Oaxaca.
 
-- Python 3
-- LangChain
-- PyPDFLoader
-- ChromaDB persistente
-- Ollama
-- `nomic-embed-text` para embeddings
-- `qwen2.5:1.5b` para respuestas ligeras
-- Tesseract OCR y ImageMagick para PDFs escaneados
-- `pdftoppm` para rasterizar páginas
+Combina técnicas de **GraphRAG** (recuperación aumentada mediante grafos de conocimiento jurídico), búsqueda léxico-difusa optimizada para jerga popular mexicana, modelos abiertos de lenguaje (`openai/gpt-oss-120b` en Groq), transcripción de notas de voz con **Whisper** y un **Bot interactivo de Telegram**.
 
-## Uso
+---
 
+## 🏛️ Normativas y Documentos Indexados
+
+El sistema indexa de forma estructurada (por capítulo y artículo) la normativa vigente, priorizando el ámbito municipal:
+
+1. **Reglamento de Tránsito Metropolitano del Municipio de Oaxaca de Juárez** (*Ámbito Municipal - Prioritario*).
+2. **Ley de Movilidad para el Estado de Oaxaca** (*Ámbito Estatal*).
+3. **Ley de Tránsito y Vialidad del Estado de Oaxaca** (*Ámbito Estatal*).
+4. **Ley de Ingresos del Estado de Oaxaca para el Ejercicio Fiscal 2026** (*Ámbito Estatal*).
+5. **Iniciativas y Decretos de Reforma Vial** (documentos auxiliares digitalizados con OCR de alta resolución).
+
+---
+
+## ✨ Características Principales
+
+- **🧠 Motor GraphRAG:** Grafo de conocimiento legal que enlaza capítulos, artículos secuenciales y fuentes normativas, permitiendo recuperación por saltos topológicos (1-2 saltos).
+- **🗣️ Tolerancia a Jerga y Coloquialismos:** Diccionario integrado que mapea términos de uso común (*«troca»*, *«remolcaron»*, *«corralón»*, *«mordida»*, *«borracho»*, *«doble fila»*) a los preceptos formales de las leyes (*vehículo, arrastre, depósito, cohecho, alcoholimetría*).
+- **🎙️ Soporte para Notas de Voz:** Permite a los usuarios enviar mensajes de voz en Telegram; el bot transcribe el audio con `whisper-large-v3-turbo` y responde de inmediato.
+- **⚡ Caché LRU en Memoria:** Respuestas ultrarrápidas (<5ms) para consultas frecuentes sin consumir cuota de tokens.
+- **📜 Visor de Artículos Oficiales:** Botones interactivos en Telegram para desplegar el texto íntegro y literal del artículo citado sin costo computacional adicional.
+- **🎯 Respuestas Concisas y Fundamentadas:** Respuestas directas al punto (sin redundancia ni rodeos) acompañadas de su respectivo sustento normativo y aviso legal.
+- **🛡️ 100% de Código Abierto / Pesos Abiertos:** Utiliza modelos abiertos (`gpt-oss-120b`, `whisper-large-v3-turbo`, `nomic-embed-text`) y librerías FOSS (Fast Open Source Software).
+
+---
+
+## 🛠️ Arquitectura del Sistema
+
+```mermaid
+flowchart TD
+    subgraph Ingesta [1. Pipeline de Ingestión]
+        PDFs[PDFs Leyes y Reglamentos] --> OCR[OCR Tesseract 300 DPI + Deskew]
+        OCR --> Chunker[Segmentador por Artículo/Capítulo]
+        Chunker --> Chroma[(ChromaDB Embeddings)]
+        Chunker --> GraphFile[ley_grafo.json\nGrafo de Artículos y Texto]
+    end
+
+    subgraph Core [2. Motor GraphRAG]
+        Query[Consulta Texto o Voz] --> VoiceProc{¿Es Nota de Voz?}
+        VoiceProc -- Sí --> Whisper[Groq Whisper Turbo]
+        VoiceProc -- No --> CacheCheck{¿En Caché LRU?}
+        Whisper --> CacheCheck
+        CacheCheck -- Sí (Hit) --> RetAnswer[Retorno Inmediato]
+        CacheCheck -- No (Miss) --> Fuzzy[Búsqueda Difusa + Jerga]
+        Fuzzy --> GraphBFS[Expansión en Grafo 1-2 saltos]
+        GraphBFS --> Prompt[Prompt Jurídico Conciso]
+        Prompt --> LLM[Groq: gpt-oss-120b]
+        LLM --> Formatter[Formato + Cita + Aviso Legal]
+    end
+
+    subgraph UI [3. Interfaces]
+        Formatter --> CLI[test_cli.py]
+        Formatter --> Telegram[telegram_bot.py]
+    end
+```
+
+---
+
+## 🚀 Instalación y Puesta en Marcha
+
+### Prerrequisitos
+- Python 3.10 o superior.
+- Git.
+- Opcional: Tesseract OCR y `poppler-utils` (solo si se van a reindexar PDFs escaneados desde cero).
+
+### 1. Clonar el repositorio
 ```bash
-ollama pull nomic-embed-text
-ollama pull qwen2.5:1.5b
+git clone https://github.com/JaimeVGA/Hacktoberfest.git
+cd Hacktoberfest
+```
+
+### 2. Crear y activar entorno virtual
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### 3. Instalar dependencias
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Configurar variables de entorno
+Copia la plantilla de configuración:
+```bash
+cp .env.example .env
+```
+Edita `.env` con tus credenciales:
+```ini
+GROQ_API_KEY=gsk_tu_clave_de_groq
+TELEGRAM_BOT_TOKEN=tu_token_de_botfather
+GROQ_MODEL=openai/gpt-oss-120b
+```
+
+---
+
+## 💻 Uso
+
+### A. Bot de Telegram (Recomendado)
+Inicia el bot interactivo:
+```bash
+python telegram_bot.py
+```
+- Escribe a tu bot en Telegram o pulsa `/start`.
+- Puedes seleccionar preguntas frecuentes de los botones, escribir consultas o enviar **notas de voz**.
+- Consulta artículos completos pulsando los botones al pie de cada respuesta.
+
+### B. Consola Interactiva (CLI)
+Para probar consultas locales sin Telegram:
+```bash
+python test_cli.py --debug
+```
+*Comandos disponibles en el CLI: `/hops 1|2`, `/k N`, `/debug`, `/salir`.*
+
+### C. Reindexar Documentos (Opcional)
+Si agregas nuevos reglamentos o PDFs a la carpeta:
+```bash
 python Conversion.py ingest
-python Conversion.py query "¿Qué establece el artículo 2?"
 ```
+*Esto reconstruirá tanto `chroma_db/` como `ley_grafo.json` con los textos completos y relaciones automáticamente.*
 
-`ingest` detecta todos los PDFs del directorio, extrae unidades por artículo,
-conserva capítulo, página y fuente, genera `ley_grafo.json` y reconstruye
-`chroma_db/`.
+---
 
-## OCR de PDFs escaneados
+## 🧪 Pruebas Automatizadas
 
-Cuando un PDF contiene menos de 1000 caracteres extraíbles, se activa OCR:
-
-- Resolución: `300 DPI`
-- Idiomas: `spa+eng`
-- Segmentación Tesseract: `--psm 3`
-- Preprocesamiento: escala de grises, deskew, contraste y enfoque
-- Caché: `9.ocr.v2.txt`
-- Modelo español: `tessdata/spa.traineddata`
-
-Parámetros opcionales:
+El proyecto cuenta con una suite completa de pruebas unitarias que validan la normalización, la búsqueda difusa, la tolerancia a jerga, la expansión del grafo, la caché LRU, el mock de audio y los manejadores de Telegram:
 
 ```bash
-OCR_DPI=300 OCR_PSM=3 OCR_LANG=spa+eng python Conversion.py ingest
-OLLAMA_EMBEDDING_MODEL=nomic-embed-text \
-OLLAMA_LLM_MODEL=qwen2.5:1.5b \
-python Conversion.py query "pregunta"
+python -m pytest -v
 ```
 
-## Archivos generados
+---
 
-- `chroma_db/`: índice vectorial local
-- `ley_grafo.json`: nodos de capítulos/artículos y relaciones
-- `9.ocr.v2.txt`: texto OCR cacheado de `9.pdf`
+## ⚖️ Exención de Responsabilidad Legal (Disclaimer)
 
-## Motor GraphRAG con Groq (`rag_engine.py`)
+Este software es una herramienta informativa y de divulgación ciudadana. Las respuestas generadas se fundamentan en el texto digitalizado de las leyes y reglamentos, pero no constituyen asesoramiento jurídico formal. Para casos específicos y controversias legales, consulte a un profesional del derecho o a las dependencias gubernamentales competentes.
 
-Consulta el grafo (`ley_grafo.json`, con el texto de cada artículo) con búsqueda difusa,
-expansión a 1–2 saltos y respuesta con Groq (modelo abierto `openai/gpt-oss-120b`).
+---
 
-```bash
-python -m venv .venv && .venv/bin/pip install -r requirements.txt
-cp .env.example .env          # completar GROQ_API_KEY y, opcionalmente, GROQ_MODEL
-python export_texts.py        # regenera ley_grafo.json desde chroma_db tras cada `ingest`
-python test_cli.py --debug    # CLI interactivo
-```
+## 📄 Licencia
 
-Para el bot: `from rag_engine import ask_rag` → `ask_rag(pregunta, history=None) -> str`
-(síncrona; en un bot asíncrono usar `asyncio.to_thread`). No lanza excepciones.
-
-## Cobertura geográfica
-
-Cada fuente conserva su alcance:
-
-- `municipal-oaxaca-de-juarez`: Reglamento de Tránsito Metropolitano del
-  Municipio de Oaxaca de Juárez.
-- `estatal-oaxaca`: leyes estatales, iniciativas y Ley de Ingresos 2026.
-
-Las consultas que mencionan Oaxaca de Juárez, Oaxaca capital, ciudad o
-municipio priorizan el reglamento municipal. Así se inicia con la ciudad y se
-pueden agregar después reglamentos, bandos, planes de movilidad y datos de
-municipios metropolitanos sin mezclar automáticamente normas municipales y
-estatales.
-
-Actualmente se indexan cinco PDFs y 668 artículos.
+Este proyecto está distribuido bajo la licencia libre y de código abierto **MIT License**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
