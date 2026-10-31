@@ -6,12 +6,22 @@
       "nombre": ""
     },
     {
+      "id": "9-preámbulo-articulo-83",
+      "tipo": "articulo",
+      "articulo": "83",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 39,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-83"
+    },
+    {
       "id": "9-preámbulo-articulo-67",
       "tipo": "articulo",
       "articulo": "67",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 9,
+      "pagina": 114,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-67"
     },
@@ -21,7 +31,7 @@
       "articulo": "49",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 12,
+      "pagina": 150,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-49"
     },
@@ -31,7 +41,7 @@
       "articulo": "83 ter",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 12,
+      "pagina": 157,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-83-ter"
     },
@@ -41,7 +51,7 @@
       "articulo": "42",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 18,
+      "pagina": 225,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-42"
     },
@@ -51,7 +61,7 @@
       "articulo": "55",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 19,
+      "pagina": 230,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-55"
     },
@@ -61,7 +71,17 @@
       "articulo": "2",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 28,
+      "pagina": 362,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-2"
+    },
+    {
+      "id": "9-preámbulo-articulo-2",
+      "tipo": "articulo",
+      "articulo": "2",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 364,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-2"
     },
@@ -71,9 +91,39 @@
       "articulo": "3",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 30,
+      "pagina": 399,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-3"
+    },
+    {
+      "id": "9-preámbulo-articulo-3",
+      "tipo": "articulo",
+      "articulo": "3",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 402,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-3"
+    },
+    {
+      "id": "9-preámbulo-articulo-3",
+      "tipo": "articulo",
+      "articulo": "3",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 407,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-3"
+    },
+    {
+      "id": "9-preámbulo-articulo-53",
+      "tipo": "articulo",
+      "articulo": "53",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 602,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-53"
     },
     {
       "id": "9-preámbulo-articulo-2",
@@ -81,7 +131,7 @@
       "articulo": "2",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 44,
+      "pagina": 625,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-2"
     },
@@ -91,7 +141,7 @@
       "articulo": "27",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 46,
+      "pagina": 653,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-27"
     },
@@ -101,309 +151,9 @@
       "articulo": "6",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 50,
+      "pagina": 698,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-6"
-    },
-    {
-      "id": "9-preámbulo-articulo-9",
-      "tipo": "articulo",
-      "articulo": "9",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 50,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-9"
-    },
-    {
-      "id": "9-preámbulo-articulo-10",
-      "tipo": "articulo",
-      "articulo": "10",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 51,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-10"
-    },
-    {
-      "id": "9-preámbulo-articulo-18",
-      "tipo": "articulo",
-      "articulo": "18",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 51,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-18"
-    },
-    {
-      "id": "9-preámbulo-articulo-19",
-      "tipo": "articulo",
-      "articulo": "19",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 55,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-19"
-    },
-    {
-      "id": "9-preámbulo-articulo-20",
-      "tipo": "articulo",
-      "articulo": "20",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 56,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-20"
-    },
-    {
-      "id": "9-preámbulo-articulo-21",
-      "tipo": "articulo",
-      "articulo": "21",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 57,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-21"
-    },
-    {
-      "id": "9-preámbulo-articulo-22",
-      "tipo": "articulo",
-      "articulo": "22",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 59,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-22"
-    },
-    {
-      "id": "9-preámbulo-articulo-24",
-      "tipo": "articulo",
-      "articulo": "24",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 60,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-24"
-    },
-    {
-      "id": "9-preámbulo-articulo-27-bis",
-      "tipo": "articulo",
-      "articulo": "27 bis",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 63,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-27-bis"
-    },
-    {
-      "id": "9-preámbulo-articulo-29",
-      "tipo": "articulo",
-      "articulo": "29",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 67,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-29"
-    },
-    {
-      "id": "9-preámbulo-articulo-30",
-      "tipo": "articulo",
-      "articulo": "30",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 68,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-30"
-    },
-    {
-      "id": "9-preámbulo-articulo-33",
-      "tipo": "articulo",
-      "articulo": "33",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 69,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-33"
-    },
-    {
-      "id": "9-preámbulo-articulo-49",
-      "tipo": "articulo",
-      "articulo": "49",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 69,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-49"
-    },
-    {
-      "id": "9-preámbulo-articulo-38",
-      "tipo": "articulo",
-      "articulo": "38",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 70,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-38"
-    },
-    {
-      "id": "9-preámbulo-articulo-37",
-      "tipo": "articulo",
-      "articulo": "37",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 70,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-37"
-    },
-    {
-      "id": "9-preámbulo-articulo-45",
-      "tipo": "articulo",
-      "articulo": "45",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 71,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-45"
-    },
-    {
-      "id": "9-preámbulo-articulo-47",
-      "tipo": "articulo",
-      "articulo": "47",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 71,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-47"
-    },
-    {
-      "id": "9-preámbulo-articulo-55",
-      "tipo": "articulo",
-      "articulo": "55",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 72,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-55"
-    },
-    {
-      "id": "9-preámbulo-articulo-75",
-      "tipo": "articulo",
-      "articulo": "75",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 73,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-75"
-    },
-    {
-      "id": "9-preámbulo-articulo-78",
-      "tipo": "articulo",
-      "articulo": "78",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 73,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-78"
-    },
-    {
-      "id": "9-preámbulo-articulo-83-quater",
-      "tipo": "articulo",
-      "articulo": "83 quater",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 76,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-83-quater"
-    },
-    {
-      "id": "9-preámbulo-articulo-83-quinquies",
-      "tipo": "articulo",
-      "articulo": "83 quinquies",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 78,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-83-quinquies"
-    },
-    {
-      "id": "9-preámbulo-articulo-83",
-      "tipo": "articulo",
-      "articulo": "83",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 78,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-83"
-    },
-    {
-      "id": "9-preámbulo-articulo-83",
-      "tipo": "articulo",
-      "articulo": "83",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 79,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-83"
-    },
-    {
-      "id": "9-preámbulo-articulo-83",
-      "tipo": "articulo",
-      "articulo": "83",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 80,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-83"
-    },
-    {
-      "id": "9-preámbulo-articulo-83",
-      "tipo": "articulo",
-      "articulo": "83",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 80,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-83"
-    },
-    {
-      "id": "9-preámbulo-articulo-91-bis",
-      "tipo": "articulo",
-      "articulo": "91 bis",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 84,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-91-bis"
-    },
-    {
-      "id": "9-preámbulo-articulo-94",
-      "tipo": "articulo",
-      "articulo": "94",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 86,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-94"
-    },
-    {
-      "id": "9-preámbulo-articulo-2",
-      "tipo": "articulo",
-      "articulo": "2",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 87,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-2"
-    },
-    {
-      "id": "9-preámbulo-articulo-3",
-      "tipo": "articulo",
-      "articulo": "3",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 88,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-3"
     },
     {
       "id": "9-preámbulo-articulo-6",
@@ -411,7 +161,7 @@
       "articulo": "6",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 100,
+      "pagina": 699,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-6"
     },
@@ -421,7 +171,17 @@
       "articulo": "9",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 100,
+      "pagina": 710,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-9"
+    },
+    {
+      "id": "9-preámbulo-articulo-9",
+      "tipo": "articulo",
+      "articulo": "9",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 711,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-9"
     },
@@ -431,7 +191,17 @@
       "articulo": "10",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 100,
+      "pagina": 727,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-10"
+    },
+    {
+      "id": "9-preámbulo-articulo-10",
+      "tipo": "articulo",
+      "articulo": "10",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 730,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-10"
     },
@@ -441,19 +211,19 @@
       "articulo": "18",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 101,
+      "pagina": 733,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-18"
     },
     {
-      "id": "9-preámbulo-articulo-18-bis",
+      "id": "9-preámbulo-articulo-18",
       "tipo": "articulo",
-      "articulo": "18 bis",
+      "articulo": "18",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 103,
+      "pagina": 737,
       "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-18-bis"
+      "unidad_id": "9-preámbulo-articulo-18"
     },
     {
       "id": "9-preámbulo-articulo-19",
@@ -461,7 +231,7 @@
       "articulo": "19",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 103,
+      "pagina": 799,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-19"
     },
@@ -471,7 +241,7 @@
       "articulo": "20",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 104,
+      "pagina": 812,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-20"
     },
@@ -481,7 +251,27 @@
       "articulo": "21",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 104,
+      "pagina": 824,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-21"
+    },
+    {
+      "id": "9-preámbulo-articulo-21",
+      "tipo": "articulo",
+      "articulo": "21",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 831,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-21"
+    },
+    {
+      "id": "9-preámbulo-articulo-21",
+      "tipo": "articulo",
+      "articulo": "21",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 840,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-21"
     },
@@ -491,19 +281,19 @@
       "articulo": "22",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 106,
+      "pagina": 872,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-22"
     },
     {
-      "id": "9-preámbulo-articulo-23-bis",
+      "id": "9-preámbulo-articulo-22",
       "tipo": "articulo",
-      "articulo": "23 bis",
+      "articulo": "22",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 107,
+      "pagina": 878,
       "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-23-bis"
+      "unidad_id": "9-preámbulo-articulo-22"
     },
     {
       "id": "9-preámbulo-articulo-24",
@@ -511,7 +301,17 @@
       "articulo": "24",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 107,
+      "pagina": 904,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-24"
+    },
+    {
+      "id": "9-preámbulo-articulo-24",
+      "tipo": "articulo",
+      "articulo": "24",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 905,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-24"
     },
@@ -521,7 +321,7 @@
       "articulo": "27 bis",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 108,
+      "pagina": 951,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-27-bis"
     },
@@ -531,7 +331,7 @@
       "articulo": "27 ter",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 108,
+      "pagina": 968,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-27-ter"
     },
@@ -541,19 +341,29 @@
       "articulo": "29",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 110,
+      "pagina": 998,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-29"
     },
     {
-      "id": "9-preámbulo-articulo-29-bis",
+      "id": "9-preámbulo-articulo-29",
       "tipo": "articulo",
-      "articulo": "29 bis",
+      "articulo": "29",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 110,
+      "pagina": 999,
       "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-29-bis"
+      "unidad_id": "9-preámbulo-articulo-29"
+    },
+    {
+      "id": "9-preámbulo-articulo-29",
+      "tipo": "articulo",
+      "articulo": "29",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1003,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-29"
     },
     {
       "id": "9-preámbulo-articulo-30",
@@ -561,19 +371,19 @@
       "articulo": "30",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 111,
+      "pagina": 1023,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-30"
     },
     {
-      "id": "9-preámbulo-articulo-30-bis",
+      "id": "9-preámbulo-articulo-30",
       "tipo": "articulo",
-      "articulo": "30 bis",
+      "articulo": "30",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 111,
+      "pagina": 1024,
       "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-30-bis"
+      "unidad_id": "9-preámbulo-articulo-30"
     },
     {
       "id": "9-preámbulo-articulo-30-ter",
@@ -581,7 +391,7 @@
       "articulo": "30 ter",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 111,
+      "pagina": 1038,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-30-ter"
     },
@@ -591,9 +401,49 @@
       "articulo": "33",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 111,
+      "pagina": 1040,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-33"
+    },
+    {
+      "id": "9-preámbulo-articulo-33",
+      "tipo": "articulo",
+      "articulo": "33",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1043,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-33"
+    },
+    {
+      "id": "9-preámbulo-articulo-49",
+      "tipo": "articulo",
+      "articulo": "49",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1046,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-49"
+    },
+    {
+      "id": "9-preámbulo-articulo-33",
+      "tipo": "articulo",
+      "articulo": "33",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1047,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-33"
+    },
+    {
+      "id": "9-preámbulo-articulo-38",
+      "tipo": "articulo",
+      "articulo": "38",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1065,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-38"
     },
     {
       "id": "9-preámbulo-articulo-36",
@@ -601,7 +451,7 @@
       "articulo": "36",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 112,
+      "pagina": 1077,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-36"
     },
@@ -611,7 +461,17 @@
       "articulo": "37",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 112,
+      "pagina": 1082,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-37"
+    },
+    {
+      "id": "9-preámbulo-articulo-37",
+      "tipo": "articulo",
+      "articulo": "37",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1085,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-37"
     },
@@ -621,7 +481,17 @@
       "articulo": "45",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 112,
+      "pagina": 1097,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-45"
+    },
+    {
+      "id": "9-preámbulo-articulo-45",
+      "tipo": "articulo",
+      "articulo": "45",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1099,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-45"
     },
@@ -631,9 +501,29 @@
       "articulo": "47",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 113,
+      "pagina": 1103,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-47"
+    },
+    {
+      "id": "9-preámbulo-articulo-47",
+      "tipo": "articulo",
+      "articulo": "47",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1104,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-47"
+    },
+    {
+      "id": "9-preámbulo-articulo-49",
+      "tipo": "articulo",
+      "articulo": "49",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1105,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-49"
     },
     {
       "id": "9-preámbulo-articulo-55",
@@ -641,7 +531,7 @@
       "articulo": "55",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 113,
+      "pagina": 1111,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-55"
     },
@@ -651,7 +541,7 @@
       "articulo": "75",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 114,
+      "pagina": 1128,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-75"
     },
@@ -661,29 +551,19 @@
       "articulo": "78",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 114,
+      "pagina": 1133,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-78"
     },
     {
-      "id": "9-preámbulo-articulo-83-bis",
+      "id": "9-preámbulo-articulo-78",
       "tipo": "articulo",
-      "articulo": "83 bis",
+      "articulo": "78",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 114,
+      "pagina": 1136,
       "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-83-bis"
-    },
-    {
-      "id": "9-preámbulo-articulo-83-ter",
-      "tipo": "articulo",
-      "articulo": "83 ter",
-      "capitulo_id": "preámbulo",
-      "capitulo": "",
-      "pagina": 115,
-      "fuente": "9.pdf",
-      "unidad_id": "9-preámbulo-articulo-83-ter"
+      "unidad_id": "9-preámbulo-articulo-78"
     },
     {
       "id": "9-preámbulo-articulo-83-quater",
@@ -691,7 +571,7 @@
       "articulo": "83 quater",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 116,
+      "pagina": 1171,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-83-quater"
     },
@@ -701,7 +581,7 @@
       "articulo": "83 quinquies",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 117,
+      "pagina": 1182,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-83-quinquies"
     },
@@ -711,7 +591,7 @@
       "articulo": "83",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 117,
+      "pagina": 1186,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-83"
     },
@@ -721,7 +601,7 @@
       "articulo": "83",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 117,
+      "pagina": 1196,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-83"
     },
@@ -731,7 +611,7 @@
       "articulo": "83",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 118,
+      "pagina": 1206,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-83"
     },
@@ -741,7 +621,7 @@
       "articulo": "83",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 118,
+      "pagina": 1209,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-83"
     },
@@ -751,7 +631,27 @@
       "articulo": "85",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 119,
+      "pagina": 1239,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-85"
+    },
+    {
+      "id": "9-preámbulo-articulo-85",
+      "tipo": "articulo",
+      "articulo": "85",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1244,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-85"
+    },
+    {
+      "id": "9-preámbulo-articulo-85",
+      "tipo": "articulo",
+      "articulo": "85",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1266,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-85"
     },
@@ -761,7 +661,377 @@
       "articulo": "91 bis",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 120,
+      "pagina": 1269,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-91-bis"
+    },
+    {
+      "id": "9-preámbulo-articulo-29",
+      "tipo": "articulo",
+      "articulo": "29",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1270,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-29"
+    },
+    {
+      "id": "9-preámbulo-articulo-94",
+      "tipo": "articulo",
+      "articulo": "94",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1289,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-94"
+    },
+    {
+      "id": "9-preámbulo-articulo-2",
+      "tipo": "articulo",
+      "articulo": "2",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1304,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-2"
+    },
+    {
+      "id": "9-preámbulo-articulo-3",
+      "tipo": "articulo",
+      "articulo": "3",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1319,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-3"
+    },
+    {
+      "id": "9-preámbulo-articulo-6",
+      "tipo": "articulo",
+      "articulo": "6",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1483,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-6"
+    },
+    {
+      "id": "9-preámbulo-articulo-18",
+      "tipo": "articulo",
+      "articulo": "18",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1501,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-18"
+    },
+    {
+      "id": "9-preámbulo-articulo-18-bis",
+      "tipo": "articulo",
+      "articulo": "18 bis",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1533,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-18-bis"
+    },
+    {
+      "id": "9-preámbulo-articulo-19",
+      "tipo": "articulo",
+      "articulo": "19",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1538,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-19"
+    },
+    {
+      "id": "9-preámbulo-articulo-20",
+      "tipo": "articulo",
+      "articulo": "20",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1546,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-20"
+    },
+    {
+      "id": "9-preámbulo-articulo-21",
+      "tipo": "articulo",
+      "articulo": "21",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1548,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-21"
+    },
+    {
+      "id": "9-preámbulo-articulo-23-bis",
+      "tipo": "articulo",
+      "articulo": "23 bis",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1594,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-23-bis"
+    },
+    {
+      "id": "9-preámbulo-articulo-24",
+      "tipo": "articulo",
+      "articulo": "24",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1595,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-24"
+    },
+    {
+      "id": "9-preámbulo-articulo-27-bis",
+      "tipo": "articulo",
+      "articulo": "27 bis",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1607,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-27-bis"
+    },
+    {
+      "id": "9-preámbulo-articulo-27-ter",
+      "tipo": "articulo",
+      "articulo": "27 ter",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1615,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-27-ter"
+    },
+    {
+      "id": "9-preámbulo-articulo-29",
+      "tipo": "articulo",
+      "articulo": "29",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1635,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-29"
+    },
+    {
+      "id": "9-preámbulo-articulo-29-bis",
+      "tipo": "articulo",
+      "articulo": "29 bis",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1639,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-29-bis"
+    },
+    {
+      "id": "9-preámbulo-articulo-30",
+      "tipo": "articulo",
+      "articulo": "30",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1656,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-30"
+    },
+    {
+      "id": "9-preámbulo-articulo-30-bis",
+      "tipo": "articulo",
+      "articulo": "30 bis",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1660,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-30-bis"
+    },
+    {
+      "id": "9-preámbulo-articulo-30-ter",
+      "tipo": "articulo",
+      "articulo": "30 ter",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1662,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-30-ter"
+    },
+    {
+      "id": "9-preámbulo-articulo-33",
+      "tipo": "articulo",
+      "articulo": "33",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1662,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-33"
+    },
+    {
+      "id": "9-preámbulo-articulo-36",
+      "tipo": "articulo",
+      "articulo": "36",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1672,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-36"
+    },
+    {
+      "id": "9-preámbulo-articulo-37",
+      "tipo": "articulo",
+      "articulo": "37",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1673,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-37"
+    },
+    {
+      "id": "9-preámbulo-articulo-45",
+      "tipo": "articulo",
+      "articulo": "45",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1676,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-45"
+    },
+    {
+      "id": "9-preámbulo-articulo-47",
+      "tipo": "articulo",
+      "articulo": "47",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1682,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-47"
+    },
+    {
+      "id": "9-preámbulo-articulo-55",
+      "tipo": "articulo",
+      "articulo": "55",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1686,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-55"
+    },
+    {
+      "id": "9-preámbulo-articulo-75",
+      "tipo": "articulo",
+      "articulo": "75",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1696,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-75"
+    },
+    {
+      "id": "9-preámbulo-articulo-78",
+      "tipo": "articulo",
+      "articulo": "78",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1697,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-78"
+    },
+    {
+      "id": "9-preámbulo-articulo-83-bis",
+      "tipo": "articulo",
+      "articulo": "83 bis",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1699,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-83-bis"
+    },
+    {
+      "id": "9-preámbulo-articulo-83-ter",
+      "tipo": "articulo",
+      "articulo": "83 ter",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1719,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-83-ter"
+    },
+    {
+      "id": "9-preámbulo-articulo-83-quater",
+      "tipo": "articulo",
+      "articulo": "83 quater",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1724,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-83-quater"
+    },
+    {
+      "id": "9-preámbulo-articulo-83-quinquies",
+      "tipo": "articulo",
+      "articulo": "83 quinquies",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1737,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-83-quinquies"
+    },
+    {
+      "id": "9-preámbulo-articulo-83",
+      "tipo": "articulo",
+      "articulo": "83",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1738,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-83"
+    },
+    {
+      "id": "9-preámbulo-articulo-83",
+      "tipo": "articulo",
+      "articulo": "83",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1740,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-83"
+    },
+    {
+      "id": "9-preámbulo-articulo-83",
+      "tipo": "articulo",
+      "articulo": "83",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1747,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-83"
+    },
+    {
+      "id": "9-preámbulo-articulo-83",
+      "tipo": "articulo",
+      "articulo": "83",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1749,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-83"
+    },
+    {
+      "id": "9-preámbulo-articulo-85",
+      "tipo": "articulo",
+      "articulo": "85",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1765,
+      "fuente": "9.pdf",
+      "unidad_id": "9-preámbulo-articulo-85"
+    },
+    {
+      "id": "9-preámbulo-articulo-91-bis",
+      "tipo": "articulo",
+      "articulo": "91 bis",
+      "capitulo_id": "preámbulo",
+      "capitulo": "",
+      "pagina": 1781,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-91-bis"
     },
@@ -771,7 +1041,7 @@
       "articulo": "94",
       "capitulo_id": "preámbulo",
       "capitulo": "",
-      "pagina": 121,
+      "pagina": 1794,
       "fuente": "9.pdf",
       "unidad_id": "9-preámbulo-articulo-94"
     },
@@ -4729,8 +4999,18 @@
   "edges": [
     {
       "source": "preámbulo",
+      "target": "9-preámbulo-articulo-83",
+      "relacion": "contiene"
+    },
+    {
+      "source": "preámbulo",
       "target": "9-preámbulo-articulo-67",
       "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-83",
+      "target": "9-preámbulo-articulo-67",
+      "relacion": "siguiente"
     },
     {
       "source": "preámbulo",
@@ -4784,6 +5064,16 @@
     },
     {
       "source": "preámbulo",
+      "target": "9-preámbulo-articulo-2",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-2",
+      "target": "9-preámbulo-articulo-2",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
       "target": "9-preámbulo-articulo-3",
       "relacion": "contiene"
     },
@@ -4794,11 +5084,41 @@
     },
     {
       "source": "preámbulo",
-      "target": "9-preámbulo-articulo-2",
+      "target": "9-preámbulo-articulo-3",
       "relacion": "contiene"
     },
     {
       "source": "9-preámbulo-articulo-3",
+      "target": "9-preámbulo-articulo-3",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
+      "target": "9-preámbulo-articulo-3",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-3",
+      "target": "9-preámbulo-articulo-3",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
+      "target": "9-preámbulo-articulo-53",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-3",
+      "target": "9-preámbulo-articulo-53",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
+      "target": "9-preámbulo-articulo-2",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-53",
       "target": "9-preámbulo-articulo-2",
       "relacion": "siguiente"
     },
@@ -4824,11 +5144,31 @@
     },
     {
       "source": "preámbulo",
+      "target": "9-preámbulo-articulo-6",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-6",
+      "target": "9-preámbulo-articulo-6",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
       "target": "9-preámbulo-articulo-9",
       "relacion": "contiene"
     },
     {
       "source": "9-preámbulo-articulo-6",
+      "target": "9-preámbulo-articulo-9",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
+      "target": "9-preámbulo-articulo-9",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-9",
       "target": "9-preámbulo-articulo-9",
       "relacion": "siguiente"
     },
@@ -4844,11 +5184,31 @@
     },
     {
       "source": "preámbulo",
+      "target": "9-preámbulo-articulo-10",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-10",
+      "target": "9-preámbulo-articulo-10",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
       "target": "9-preámbulo-articulo-18",
       "relacion": "contiene"
     },
     {
       "source": "9-preámbulo-articulo-10",
+      "target": "9-preámbulo-articulo-18",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
+      "target": "9-preámbulo-articulo-18",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-18",
       "target": "9-preámbulo-articulo-18",
       "relacion": "siguiente"
     },
@@ -4884,11 +5244,41 @@
     },
     {
       "source": "preámbulo",
+      "target": "9-preámbulo-articulo-21",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-21",
+      "target": "9-preámbulo-articulo-21",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
+      "target": "9-preámbulo-articulo-21",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-21",
+      "target": "9-preámbulo-articulo-21",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
       "target": "9-preámbulo-articulo-22",
       "relacion": "contiene"
     },
     {
       "source": "9-preámbulo-articulo-21",
+      "target": "9-preámbulo-articulo-22",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
+      "target": "9-preámbulo-articulo-22",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-22",
       "target": "9-preámbulo-articulo-22",
       "relacion": "siguiente"
     },
@@ -4904,6 +5294,16 @@
     },
     {
       "source": "preámbulo",
+      "target": "9-preámbulo-articulo-24",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-24",
+      "target": "9-preámbulo-articulo-24",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
       "target": "9-preámbulo-articulo-27-bis",
       "relacion": "contiene"
     },
@@ -4914,11 +5314,41 @@
     },
     {
       "source": "preámbulo",
-      "target": "9-preámbulo-articulo-29",
+      "target": "9-preámbulo-articulo-27-ter",
       "relacion": "contiene"
     },
     {
       "source": "9-preámbulo-articulo-27-bis",
+      "target": "9-preámbulo-articulo-27-ter",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
+      "target": "9-preámbulo-articulo-29",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-27-ter",
+      "target": "9-preámbulo-articulo-29",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
+      "target": "9-preámbulo-articulo-29",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-29",
+      "target": "9-preámbulo-articulo-29",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
+      "target": "9-preámbulo-articulo-29",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-29",
       "target": "9-preámbulo-articulo-29",
       "relacion": "siguiente"
     },
@@ -4934,11 +5364,41 @@
     },
     {
       "source": "preámbulo",
-      "target": "9-preámbulo-articulo-33",
+      "target": "9-preámbulo-articulo-30",
       "relacion": "contiene"
     },
     {
       "source": "9-preámbulo-articulo-30",
+      "target": "9-preámbulo-articulo-30",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
+      "target": "9-preámbulo-articulo-30-ter",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-30",
+      "target": "9-preámbulo-articulo-30-ter",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
+      "target": "9-preámbulo-articulo-33",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-30-ter",
+      "target": "9-preámbulo-articulo-33",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
+      "target": "9-preámbulo-articulo-33",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-33",
       "target": "9-preámbulo-articulo-33",
       "relacion": "siguiente"
     },
@@ -4954,12 +5414,32 @@
     },
     {
       "source": "preámbulo",
-      "target": "9-preámbulo-articulo-38",
+      "target": "9-preámbulo-articulo-33",
       "relacion": "contiene"
     },
     {
       "source": "9-preámbulo-articulo-49",
+      "target": "9-preámbulo-articulo-33",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
       "target": "9-preámbulo-articulo-38",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-33",
+      "target": "9-preámbulo-articulo-38",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
+      "target": "9-preámbulo-articulo-36",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-38",
+      "target": "9-preámbulo-articulo-36",
       "relacion": "siguiente"
     },
     {
@@ -4968,7 +5448,17 @@
       "relacion": "contiene"
     },
     {
-      "source": "9-preámbulo-articulo-38",
+      "source": "9-preámbulo-articulo-36",
+      "target": "9-preámbulo-articulo-37",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
+      "target": "9-preámbulo-articulo-37",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-37",
       "target": "9-preámbulo-articulo-37",
       "relacion": "siguiente"
     },
@@ -4984,6 +5474,16 @@
     },
     {
       "source": "preámbulo",
+      "target": "9-preámbulo-articulo-45",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-45",
+      "target": "9-preámbulo-articulo-45",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
       "target": "9-preámbulo-articulo-47",
       "relacion": "contiene"
     },
@@ -4994,11 +5494,31 @@
     },
     {
       "source": "preámbulo",
-      "target": "9-preámbulo-articulo-55",
+      "target": "9-preámbulo-articulo-47",
       "relacion": "contiene"
     },
     {
       "source": "9-preámbulo-articulo-47",
+      "target": "9-preámbulo-articulo-47",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
+      "target": "9-preámbulo-articulo-49",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-47",
+      "target": "9-preámbulo-articulo-49",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
+      "target": "9-preámbulo-articulo-55",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-49",
       "target": "9-preámbulo-articulo-55",
       "relacion": "siguiente"
     },
@@ -5019,6 +5539,16 @@
     },
     {
       "source": "9-preámbulo-articulo-75",
+      "target": "9-preámbulo-articulo-78",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
+      "target": "9-preámbulo-articulo-78",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-78",
       "target": "9-preámbulo-articulo-78",
       "relacion": "siguiente"
     },
@@ -5084,12 +5614,52 @@
     },
     {
       "source": "preámbulo",
-      "target": "9-preámbulo-articulo-91-bis",
+      "target": "9-preámbulo-articulo-85",
       "relacion": "contiene"
     },
     {
       "source": "9-preámbulo-articulo-83",
+      "target": "9-preámbulo-articulo-85",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
+      "target": "9-preámbulo-articulo-85",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-85",
+      "target": "9-preámbulo-articulo-85",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
+      "target": "9-preámbulo-articulo-85",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-85",
+      "target": "9-preámbulo-articulo-85",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
       "target": "9-preámbulo-articulo-91-bis",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-85",
+      "target": "9-preámbulo-articulo-91-bis",
+      "relacion": "siguiente"
+    },
+    {
+      "source": "preámbulo",
+      "target": "9-preámbulo-articulo-29",
+      "relacion": "contiene"
+    },
+    {
+      "source": "9-preámbulo-articulo-91-bis",
+      "target": "9-preámbulo-articulo-29",
       "relacion": "siguiente"
     },
     {
@@ -5098,7 +5668,7 @@
       "relacion": "contiene"
     },
     {
-      "source": "9-preámbulo-articulo-91-bis",
+      "source": "9-preámbulo-articulo-29",
       "target": "9-preámbulo-articulo-94",
       "relacion": "siguiente"
     },
@@ -5134,31 +5704,11 @@
     },
     {
       "source": "preámbulo",
-      "target": "9-preámbulo-articulo-9",
-      "relacion": "contiene"
-    },
-    {
-      "source": "9-preámbulo-articulo-6",
-      "target": "9-preámbulo-articulo-9",
-      "relacion": "siguiente"
-    },
-    {
-      "source": "preámbulo",
-      "target": "9-preámbulo-articulo-10",
-      "relacion": "contiene"
-    },
-    {
-      "source": "9-preámbulo-articulo-9",
-      "target": "9-preámbulo-articulo-10",
-      "relacion": "siguiente"
-    },
-    {
-      "source": "preámbulo",
       "target": "9-preámbulo-articulo-18",
       "relacion": "contiene"
     },
     {
-      "source": "9-preámbulo-articulo-10",
+      "source": "9-preámbulo-articulo-6",
       "target": "9-preámbulo-articulo-18",
       "relacion": "siguiente"
     },
@@ -5204,21 +5754,11 @@
     },
     {
       "source": "preámbulo",
-      "target": "9-preámbulo-articulo-22",
-      "relacion": "contiene"
-    },
-    {
-      "source": "9-preámbulo-articulo-21",
-      "target": "9-preámbulo-articulo-22",
-      "relacion": "siguiente"
-    },
-    {
-      "source": "preámbulo",
       "target": "9-preámbulo-articulo-23-bis",
       "relacion": "contiene"
     },
     {
-      "source": "9-preámbulo-articulo-22",
+      "source": "9-preámbulo-articulo-21",
       "target": "9-preámbulo-articulo-23-bis",
       "relacion": "siguiente"
     },

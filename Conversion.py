@@ -33,6 +33,10 @@ GRAPH_PATH = BASE_DIR / "ley_grafo.json"
 
 EMBEDDING_MODEL = os.getenv("OLLAMA_EMBEDDING_MODEL", "nomic-embed-text")
 LLM_MODEL = os.getenv("OLLAMA_LLM_MODEL", "qwen2.5:1.5b")
+OCR_VERSION = "v2"
+OCR_DPI = os.getenv("OCR_DPI", "300")
+OCR_PSM = os.getenv("OCR_PSM", "3")
+LOCAL_TESSDATA = BASE_DIR / "tessdata"
 
 CHAPTER_RE = re.compile(
     r"(?m)^\s*CAP[IÍ]TULO\s+([IVXLCDM]+|[0-9]+)\s*$"
@@ -76,27 +80,44 @@ def _chapter_at(text: str, position: int) -> tuple[str, str]:
 def _ocr_pdf(pdf_path: Path) -> list[Document]:
     """Convierte temporalmente cada página escaneada a texto con Tesseract."""
     pages: list[Document] = []
+    languages = os.getenv("OCR_LANG", "spa+eng")
+    tessdata_prefix = str(LOCAL_TESSDATA) if (LOCAL_TESSDATA / "spa.traineddata").exists() else None
+    if tessdata_prefix is None:
+        languages = "eng"
+        print("Advertencia: falta tessdata/spa.traineddata; usar OCR inglés.")
     with tempfile.TemporaryDirectory(prefix="rag-ocr-") as temp_dir:
         prefix = str(Path(temp_dir) / "page")
         rendered = subprocess.run(
-            ["pdftoppm", "-r", "200", "-png", str(pdf_path), prefix],
+            ["pdftoppm", "-r", OCR_DPI, "-gray", "-png", str(pdf_path), prefix],
             check=True,
             capture_output=True,
             text=True,
         )
         del rendered
         for image_path in sorted(Path(temp_dir).glob("page-*.png")):
-            result = subprocess.run(
+            enhanced_path = image_path.with_name(f"{image_path.stem}-enhanced.png")
+            subprocess.run(
                 [
-                    "tesseract", str(image_path), "stdout",
-                    "-l", os.getenv("OCR_LANG", "eng"), "--psm", "6",
+                    "magick", str(image_path), "-deskew", "40%",
+                    "-contrast-stretch", "0x10%", "-sharpen", "0x1",
+                    str(enhanced_path),
                 ],
                 check=True,
                 capture_output=True,
                 text=True,
             )
+            result = subprocess.run(
+                [
+                    "tesseract", str(enhanced_path), "stdout",
+                    "-l", languages, "--psm", OCR_PSM,
+                ],
+                env={**os.environ, **({"TESSDATA_PREFIX": tessdata_prefix} if tessdata_prefix else {})},
+                check=True,
+                capture_output=True,
+                text=True,
+            )
             pages.append(Document(page_content=result.stdout, metadata={"page": len(pages) + 1}))
-    cache = pdf_path.with_suffix(".ocr.txt")
+    cache = pdf_path.with_suffix(f".ocr.{OCR_VERSION}.txt")
     cache.write_text("\n\n".join(page.page_content for page in pages), encoding="utf-8")
     return pages
 
@@ -104,7 +125,7 @@ def _ocr_pdf(pdf_path: Path) -> list[Document]:
 def _load_pages(pdf_path: Path) -> list[Document]:
     pages = PyPDFLoader(str(pdf_path)).load()
     if sum(len(page.page_content.strip()) for page in pages) < 1000:
-        cache = pdf_path.with_suffix(".ocr.txt")
+        cache = pdf_path.with_suffix(f".ocr.{OCR_VERSION}.txt")
         if cache.exists():
             return [
                 Document(page_content=text, metadata={"page": index + 1})
