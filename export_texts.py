@@ -24,11 +24,21 @@ COLLECTION = "ley_transito_oaxaca"
 
 
 def ley_name(fuente: str) -> str:
+    if fuente.startswith("Transito_y_Vialidad_Oaxaca"):
+        return "Reglamento de Tránsito Metropolitano para el Municipio de Oaxaca de Juárez"
     if fuente.startswith("Ley_de_Movilidad"):
         return "Ley de Movilidad para el Estado de Oaxaca"
+    if fuente.startswith("LEY_DE_INGRESOS"):
+        return "Ley de Ingresos del Estado de Oaxaca para el Ejercicio Fiscal 2026"
     if fuente.startswith("Ley_de_Transito"):
         return "Ley de Tránsito y Vialidad del Estado de Oaxaca"
     return "Iniciativa de reforma (9.pdf)"
+
+
+def alcance(fuente: str) -> str:
+    if fuente.startswith("Transito_y_Vialidad_Oaxaca"):
+        return "municipal-oaxaca-de-juarez"
+    return "estatal-oaxaca"
 
 
 def ley_slug(fuente: str) -> str:
@@ -71,7 +81,7 @@ def build(units: list[dict]) -> dict:
             chapters.add(chapter_id)
             nodes.append(
                 {"id": chapter_id, "tipo": "capitulo", "nombre": u.get("capitulo", ""),
-                 "ley": ley_name(fuente), "fuente": fuente}
+                 "ley": ley_name(fuente), "fuente": fuente, "alcance": alcance(fuente)}
             )
         base_id = f"{slug}:{u['capitulo_id']}:articulo-{str(u['articulo']).replace(' ', '-')}"
         seen_ids[base_id] = seen_ids.get(base_id, 0) + 1
@@ -86,6 +96,7 @@ def build(units: list[dict]) -> dict:
                 "pagina": u.get("pagina", 0),
                 "fuente": fuente,
                 "ley": ley_name(fuente),
+                "alcance": alcance(fuente),
                 "texto": u.get("texto", ""),
             }
         )

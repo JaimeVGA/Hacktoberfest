@@ -68,3 +68,19 @@ python test_cli.py --debug    # CLI interactivo
 
 Para el bot: `from rag_engine import ask_rag` → `ask_rag(pregunta, history=None) -> str`
 (síncrona; en un bot asíncrono usar `asyncio.to_thread`). No lanza excepciones.
+
+## Cobertura geográfica
+
+Cada fuente conserva su alcance:
+
+- `municipal-oaxaca-de-juarez`: Reglamento de Tránsito Metropolitano del
+  Municipio de Oaxaca de Juárez.
+- `estatal-oaxaca`: leyes estatales, iniciativas y Ley de Ingresos 2026.
+
+Las consultas que mencionan Oaxaca de Juárez, Oaxaca capital, ciudad o
+municipio priorizan el reglamento municipal. Así se inicia con la ciudad y se
+pueden agregar después reglamentos, bandos, planes de movilidad y datos de
+municipios metropolitanos sin mezclar automáticamente normas municipales y
+estatales.
+
+Actualmente se indexan cinco PDFs y 668 artículos.

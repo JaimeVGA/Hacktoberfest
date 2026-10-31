@@ -110,6 +110,10 @@ JERGA_A_LEGAL: dict[str, str] = {
     "casco": "casco motociclista",
     "cinturon": "cinturon seguridad",
     "velocidad": "velocidad limite",
+    "oaxaca capital": "oaxaca de juarez municipio metropolitano",
+    "ciudad de oaxaca": "oaxaca de juarez municipio metropolitano",
+    "oaxaca de juarez": "municipio metropolitano reglamento transito",
+    "municipio": "municipal ayuntamiento reglamento",
 }
 
 _ARTICLE_RE = re.compile(
@@ -165,6 +169,7 @@ class Node:
     fuente: str = ""
     pagina: int = 0
     texto: str = ""
+    alcance: str = ""
 
 
 @dataclass
@@ -198,6 +203,7 @@ class LegalGraph:
                 fuente=raw.get("fuente", ""),
                 pagina=int(raw.get("pagina") or 0),
                 texto=raw.get("texto", ""),
+                alcance=raw.get("alcance", ""),
             )
         self.prev: dict[str, str] = {}
         self.next: dict[str, str] = {}
@@ -289,6 +295,18 @@ class LegalGraph:
         # Niveles 1-2: normalización + jerga + fuzzy léxico
         terms = expand_jerga(query)
         ranking, coverage = self._lexical(terms)
+        nq = normalize(query)
+        city_hint = any(
+            phrase in nq
+            for phrase in ("oaxaca de juarez", "ciudad de oaxaca", "oaxaca capital", "municipio")
+        )
+        if city_hint:
+            ranking = [
+                (idx, score * (1.8 if self.articles[idx].alcance == "municipal-oaxaca-de-juarez" else 0.85)
+                 if self.articles[idx].alcance else score)
+                for idx, score in ranking
+            ]
+            ranking.sort(key=lambda item: item[1], reverse=True)
         level, used = (1 if terms != tokens(query) else 2), query
         # Nivel 3: reescritura externa (opcional) si la cobertura es baja
         if (coverage < LOW_CONFIDENCE or not ranking) and rewritten:
@@ -339,7 +357,10 @@ def format_context(passages: list[Passage], max_chars: int = MAX_CONTEXT_CHARS) 
     used = 0
     for p in passages:
         n = p.node
-        head = f"[{n.ley} | Capítulo: {n.capitulo or 's/n'} | Art. {n.articulo} | p. {n.pagina}]"
+        head = (
+            f"[{n.ley} | Alcance: {n.alcance or 'no indicado'} | "
+            f"Capítulo: {n.capitulo or 's/n'} | Art. {n.articulo} | p. {n.pagina}]"
+        )
         block = f"{head}\n{n.texto[:MAX_PASSAGE_CHARS].strip()}"
         if used + len(block) > max_chars:
             break
